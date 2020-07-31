@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		6145495A631A343270139452 /* Pods_GrassChoppersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6449AEDBEC2C295F09737911 /* Pods_GrassChoppersTests.framework */; };
 		6C743DEB0BFF0A880528EF0A /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E990D92A5DAA8167A75D007 /* Pods_GrassChoppers_GrassChoppersUITests.framework */; };
+		8B15A8A424D3C0A800195012 /* HomeLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A89E24D3C0A800195012 /* HomeLogicController.swift */; };
+		8B15A8A524D3C0A800195012 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A89F24D3C0A800195012 /* HomeAssembly.swift */; };
+		8B15A8A624D3C0A800195012 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8A024D3C0A800195012 /* HomeDataManager.swift */; };
+		8B15A8A724D3C0A800195012 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8A124D3C0A800195012 /* HomeViewController.swift */; };
+		8B15A8A824D3C0A800195012 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8A224D3C0A800195012 /* HomeRouter.swift */; };
+		8B15A8A924D3C0A800195012 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8A324D3C0A800195012 /* HomeModule.swift */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
@@ -48,6 +54,12 @@
 		497F6234C23FEB212E9B4566 /* Pods_GrassChoppers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6449AEDBEC2C295F09737911 /* Pods_GrassChoppersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F0E95C70E2DFDDB2EA84D2 /* Pods-GrassChoppers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers.debug.xcconfig"; sourceTree = "<group>"; };
+		8B15A89E24D3C0A800195012 /* HomeLogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLogicController.swift; sourceTree = "<group>"; };
+		8B15A89F24D3C0A800195012 /* HomeAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		8B15A8A024D3C0A800195012 /* HomeDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		8B15A8A124D3C0A800195012 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8B15A8A224D3C0A800195012 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		8B15A8A324D3C0A800195012 /* HomeModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +111,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B15A89D24D3C0A800195012 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8B15A89E24D3C0A800195012 /* HomeLogicController.swift */,
+				8B15A89F24D3C0A800195012 /* HomeAssembly.swift */,
+				8B15A8A024D3C0A800195012 /* HomeDataManager.swift */,
+				8B15A8A124D3C0A800195012 /* HomeViewController.swift */,
+				8B15A8A224D3C0A800195012 /* HomeRouter.swift */,
+				8B15A8A324D3C0A800195012 /* HomeModule.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		8B56E44A24D3B70000EDDF41 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +151,7 @@
 			children = (
 				8B56E45624D3B70000EDDF41 /* AppDelegate.swift */,
 				8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */,
+				8B15A89D24D3C0A800195012 /* Home */,
 				8B56E4A224D3BA5B00EDDF41 /* ModuleTemplate */,
 				8B56E45F24D3B70100EDDF41 /* Assets.xcassets */,
 				8B56E46124D3B70100EDDF41 /* LaunchScreen.storyboard */,
@@ -427,13 +453,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */,
+				8B15A8A624D3C0A800195012 /* HomeDataManager.swift in Sources */,
+				8B15A8A924D3C0A800195012 /* HomeModule.swift in Sources */,
 				8B56E4AB24D3BA5B00EDDF41 /* Assembly.swift in Sources */,
+				8B15A8A524D3C0A800195012 /* HomeAssembly.swift in Sources */,
 				8B56E4A924D3BA5B00EDDF41 /* DataManager.swift in Sources */,
 				8B56E4AD24D3BA5B00EDDF41 /* Router.swift in Sources */,
+				8B15A8A824D3C0A800195012 /* HomeRouter.swift in Sources */,
+				8B15A8A424D3C0A800195012 /* HomeLogicController.swift in Sources */,
 				8B56E4AA24D3BA5B00EDDF41 /* ViewController.swift in Sources */,
 				8B56E4AE24D3BA5B00EDDF41 /* Module.swift in Sources */,
 				8B56E4AC24D3BA5B00EDDF41 /* LogicController.swift in Sources */,
 				8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */,
+				8B15A8A724D3C0A800195012 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
