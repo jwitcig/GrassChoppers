@@ -1,0 +1,6 @@
+framework module Pods_GrassChoppers {
+  umbrella header "Pods-GrassChoppers-umbrella.h"
+
+  export *
+  module * { export * }
+}
