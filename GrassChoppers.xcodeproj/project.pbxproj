@@ -3,20 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02DB816AC69B96B1C62DD362 /* Pods_GrassChoppers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40399EF08A8D9229DF50D4EA /* Pods_GrassChoppers.framework */; };
-		6FA661C9710C054710B5A302 /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B4D68A5EC03CBBC95AC2F0 /* Pods_GrassChoppers_GrassChoppersUITests.framework */; };
+		6145495A631A343270139452 /* Pods_GrassChoppersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6449AEDBEC2C295F09737911 /* Pods_GrassChoppersTests.framework */; };
+		6C743DEB0BFF0A880528EF0A /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E990D92A5DAA8167A75D007 /* Pods_GrassChoppers_GrassChoppersUITests.framework */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
-		8B56E45B24D3B70000EDDF41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45A24D3B70000EDDF41 /* ViewController.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
 		8B56E46324D3B70100EDDF41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E46124D3B70100EDDF41 /* LaunchScreen.storyboard */; };
 		8B56E46E24D3B70100EDDF41 /* GrassChoppersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E46D24D3B70100EDDF41 /* GrassChoppersTests.swift */; };
 		8B56E47924D3B70100EDDF41 /* GrassChoppersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E47824D3B70100EDDF41 /* GrassChoppersUITests.swift */; };
-		F4D439815B557C35EF59598D /* Pods_GrassChoppersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF294EDBA97AEF5B842030C /* Pods_GrassChoppersTests.framework */; };
+		8B56E4A924D3BA5B00EDDF41 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A324D3BA5B00EDDF41 /* DataManager.swift */; };
+		8B56E4AA24D3BA5B00EDDF41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A424D3BA5B00EDDF41 /* ViewController.swift */; };
+		8B56E4AB24D3BA5B00EDDF41 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A524D3BA5B00EDDF41 /* Assembly.swift */; };
+		8B56E4AC24D3BA5B00EDDF41 /* LogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A624D3BA5B00EDDF41 /* LogicController.swift */; };
+		8B56E4AD24D3BA5B00EDDF41 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A724D3BA5B00EDDF41 /* Router.swift */; };
+		8B56E4AE24D3BA5B00EDDF41 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A824D3BA5B00EDDF41 /* Module.swift */; };
+		9701BB0638C1609BD1C582DA /* Pods_GrassChoppers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F6234C23FEB212E9B4566 /* Pods_GrassChoppers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,16 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EF294EDBA97AEF5B842030C /* Pods_GrassChoppersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		40399EF08A8D9229DF50D4EA /* Pods_GrassChoppers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C883A2FD09ADF6203738B6A /* Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		668E9F7BB01E4A54C54A46B3 /* Pods-GrassChoppers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers.release.xcconfig"; sourceTree = "<group>"; };
-		70B96628FED046C65C538DD7 /* Pods-GrassChoppersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppersTests.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppersTests/Pods-GrassChoppersTests.debug.xcconfig"; sourceTree = "<group>"; };
-		890588905C89BACED56AF13E /* Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0E990D92A5DAA8167A75D007 /* Pods_GrassChoppers_GrassChoppersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers_GrassChoppersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D306587B871AE1B5F62790A /* Pods-GrassChoppersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppersTests.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppersTests/Pods-GrassChoppersTests.release.xcconfig"; sourceTree = "<group>"; };
+		300D67B82E29FFDA9B27BB6C /* Pods-GrassChoppersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppersTests.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppersTests/Pods-GrassChoppersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		497F6234C23FEB212E9B4566 /* Pods_GrassChoppers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6449AEDBEC2C295F09737911 /* Pods_GrassChoppersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F0E95C70E2DFDDB2EA84D2 /* Pods-GrassChoppers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers.debug.xcconfig"; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B56E45A24D3B70000EDDF41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B56E45F24D3B70100EDDF41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B56E46224D3B70100EDDF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B56E46424D3B70100EDDF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,9 +60,15 @@
 		8B56E47424D3B70100EDDF41 /* GrassChoppersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrassChoppersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E47824D3B70100EDDF41 /* GrassChoppersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrassChoppersUITests.swift; sourceTree = "<group>"; };
 		8B56E47A24D3B70100EDDF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0C408FD659C6E6A3FA1B9B7 /* Pods-GrassChoppers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers.debug.xcconfig"; sourceTree = "<group>"; };
-		C9B4D68A5EC03CBBC95AC2F0 /* Pods_GrassChoppers_GrassChoppersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers_GrassChoppersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB0A7C307AC38E6F0687D77D /* Pods-GrassChoppersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppersTests.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppersTests/Pods-GrassChoppersTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B56E4A324D3BA5B00EDDF41 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8B56E4A424D3BA5B00EDDF41 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B56E4A524D3BA5B00EDDF41 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		8B56E4A624D3BA5B00EDDF41 /* LogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicController.swift; sourceTree = "<group>"; };
+		8B56E4A724D3BA5B00EDDF41 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8B56E4A824D3BA5B00EDDF41 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		A1D6460DA1C2C07098E1DC68 /* Pods-GrassChoppers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers.release.xcconfig"; sourceTree = "<group>"; };
+		B69CDA3151D5E36CA24F96F1 /* Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C0DE411DC9DE3DDE05C10636 /* Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02DB816AC69B96B1C62DD362 /* Pods_GrassChoppers.framework in Frameworks */,
+				9701BB0638C1609BD1C582DA /* Pods_GrassChoppers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4D439815B557C35EF59598D /* Pods_GrassChoppersTests.framework in Frameworks */,
+				6145495A631A343270139452 /* Pods_GrassChoppersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,27 +92,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FA661C9710C054710B5A302 /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */,
+				6C743DEB0BFF0A880528EF0A /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D4CA948B7DF36014CD7F55A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B0C408FD659C6E6A3FA1B9B7 /* Pods-GrassChoppers.debug.xcconfig */,
-				668E9F7BB01E4A54C54A46B3 /* Pods-GrassChoppers.release.xcconfig */,
-				5C883A2FD09ADF6203738B6A /* Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig */,
-				890588905C89BACED56AF13E /* Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig */,
-				70B96628FED046C65C538DD7 /* Pods-GrassChoppersTests.debug.xcconfig */,
-				CB0A7C307AC38E6F0687D77D /* Pods-GrassChoppersTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		8B56E44A24D3B70000EDDF41 = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +106,8 @@
 				8B56E46C24D3B70100EDDF41 /* GrassChoppersTests */,
 				8B56E47724D3B70100EDDF41 /* GrassChoppersUITests */,
 				8B56E45424D3B70000EDDF41 /* Products */,
-				6D4CA948B7DF36014CD7F55A /* Pods */,
-				8F9FF1AB0522DBF61CADAF5C /* Frameworks */,
+				DD59EBF563B3E025D27E3814 /* Pods */,
+				CEB080415C5DA31B16177071 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +126,7 @@
 			children = (
 				8B56E45624D3B70000EDDF41 /* AppDelegate.swift */,
 				8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */,
-				8B56E45A24D3B70000EDDF41 /* ViewController.swift */,
+				8B56E4A224D3BA5B00EDDF41 /* ModuleTemplate */,
 				8B56E45F24D3B70100EDDF41 /* Assets.xcassets */,
 				8B56E46124D3B70100EDDF41 /* LaunchScreen.storyboard */,
 				8B56E46424D3B70100EDDF41 /* Info.plist */,
@@ -156,14 +152,40 @@
 			path = GrassChoppersUITests;
 			sourceTree = "<group>";
 		};
-		8F9FF1AB0522DBF61CADAF5C /* Frameworks */ = {
+		8B56E4A224D3BA5B00EDDF41 /* ModuleTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				40399EF08A8D9229DF50D4EA /* Pods_GrassChoppers.framework */,
-				C9B4D68A5EC03CBBC95AC2F0 /* Pods_GrassChoppers_GrassChoppersUITests.framework */,
-				0EF294EDBA97AEF5B842030C /* Pods_GrassChoppersTests.framework */,
+				8B56E4A324D3BA5B00EDDF41 /* DataManager.swift */,
+				8B56E4A424D3BA5B00EDDF41 /* ViewController.swift */,
+				8B56E4A624D3BA5B00EDDF41 /* LogicController.swift */,
+				8B56E4A724D3BA5B00EDDF41 /* Router.swift */,
+				8B56E4A524D3BA5B00EDDF41 /* Assembly.swift */,
+				8B56E4A824D3BA5B00EDDF41 /* Module.swift */,
+			);
+			path = ModuleTemplate;
+			sourceTree = "<group>";
+		};
+		CEB080415C5DA31B16177071 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				497F6234C23FEB212E9B4566 /* Pods_GrassChoppers.framework */,
+				0E990D92A5DAA8167A75D007 /* Pods_GrassChoppers_GrassChoppersUITests.framework */,
+				6449AEDBEC2C295F09737911 /* Pods_GrassChoppersTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD59EBF563B3E025D27E3814 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67F0E95C70E2DFDDB2EA84D2 /* Pods-GrassChoppers.debug.xcconfig */,
+				A1D6460DA1C2C07098E1DC68 /* Pods-GrassChoppers.release.xcconfig */,
+				C0DE411DC9DE3DDE05C10636 /* Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig */,
+				B69CDA3151D5E36CA24F96F1 /* Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig */,
+				300D67B82E29FFDA9B27BB6C /* Pods-GrassChoppersTests.debug.xcconfig */,
+				1D306587B871AE1B5F62790A /* Pods-GrassChoppersTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,11 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B56E47D24D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppers" */;
 			buildPhases = (
-				73A525BEDFD70DA10AEC3EBE /* [CP] Check Pods Manifest.lock */,
+				0B405A5691833CFDC7E57031 /* [CP] Check Pods Manifest.lock */,
 				8B56E44F24D3B70000EDDF41 /* Sources */,
 				8B56E45024D3B70000EDDF41 /* Frameworks */,
 				8B56E45124D3B70000EDDF41 /* Resources */,
-				B1892B96C118D2AAF16675C2 /* [CP] Embed Pods Frameworks */,
+				EA7EAC8F0212C3B5DC8A7861 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,7 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B56E48024D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppersTests" */;
 			buildPhases = (
-				05BB64B82E19FCE647AA1BC8 /* [CP] Check Pods Manifest.lock */,
+				E091D9CFA4BE179313220E93 /* [CP] Check Pods Manifest.lock */,
 				8B56E46524D3B70100EDDF41 /* Sources */,
 				8B56E46624D3B70100EDDF41 /* Frameworks */,
 				8B56E46724D3B70100EDDF41 /* Resources */,
@@ -211,11 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B56E48324D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppersUITests" */;
 			buildPhases = (
-				C27708FA1A24DC90138A0CCB /* [CP] Check Pods Manifest.lock */,
+				A12EFD72109B60D9738B3571 /* [CP] Check Pods Manifest.lock */,
 				8B56E47024D3B70100EDDF41 /* Sources */,
 				8B56E47124D3B70100EDDF41 /* Frameworks */,
 				8B56E47224D3B70100EDDF41 /* Resources */,
-				481F3F3A608379D6F5A881B6 /* [CP] Embed Pods Frameworks */,
+				701A793A12A9E4F57F1E932C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,46 +319,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05BB64B82E19FCE647AA1BC8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GrassChoppersTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		481F3F3A608379D6F5A881B6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73A525BEDFD70DA10AEC3EBE /* [CP] Check Pods Manifest.lock */ = {
+		0B405A5691833CFDC7E57031 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,24 +341,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1892B96C118D2AAF16675C2 /* [CP] Embed Pods Frameworks */ = {
+		701A793A12A9E4F57F1E932C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C27708FA1A24DC90138A0CCB /* [CP] Check Pods Manifest.lock */ = {
+		A12EFD72109B60D9738B3571 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,6 +380,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E091D9CFA4BE179313220E93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrassChoppersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7EAC8F0212C3B5DC8A7861 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -404,8 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B56E45B24D3B70000EDDF41 /* ViewController.swift in Sources */,
 				8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */,
+				8B56E4AB24D3BA5B00EDDF41 /* Assembly.swift in Sources */,
+				8B56E4A924D3BA5B00EDDF41 /* DataManager.swift in Sources */,
+				8B56E4AD24D3BA5B00EDDF41 /* Router.swift in Sources */,
+				8B56E4AA24D3BA5B00EDDF41 /* ViewController.swift in Sources */,
+				8B56E4AE24D3BA5B00EDDF41 /* Module.swift in Sources */,
+				8B56E4AC24D3BA5B00EDDF41 /* LogicController.swift in Sources */,
 				8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +596,7 @@
 		};
 		8B56E47E24D3B70100EDDF41 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0C408FD659C6E6A3FA1B9B7 /* Pods-GrassChoppers.debug.xcconfig */;
+			baseConfigurationReference = 67F0E95C70E2DFDDB2EA84D2 /* Pods-GrassChoppers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -588,7 +615,7 @@
 		};
 		8B56E47F24D3B70100EDDF41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 668E9F7BB01E4A54C54A46B3 /* Pods-GrassChoppers.release.xcconfig */;
+			baseConfigurationReference = A1D6460DA1C2C07098E1DC68 /* Pods-GrassChoppers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,7 +634,7 @@
 		};
 		8B56E48124D3B70100EDDF41 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70B96628FED046C65C538DD7 /* Pods-GrassChoppersTests.debug.xcconfig */;
+			baseConfigurationReference = 300D67B82E29FFDA9B27BB6C /* Pods-GrassChoppersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,7 +657,7 @@
 		};
 		8B56E48224D3B70100EDDF41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB0A7C307AC38E6F0687D77D /* Pods-GrassChoppersTests.release.xcconfig */;
+			baseConfigurationReference = 1D306587B871AE1B5F62790A /* Pods-GrassChoppersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -653,7 +680,7 @@
 		};
 		8B56E48424D3B70100EDDF41 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C883A2FD09ADF6203738B6A /* Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig */;
+			baseConfigurationReference = C0DE411DC9DE3DDE05C10636 /* Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,7 +701,7 @@
 		};
 		8B56E48524D3B70100EDDF41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 890588905C89BACED56AF13E /* Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig */;
+			baseConfigurationReference = B69CDA3151D5E36CA24F96F1 /* Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
