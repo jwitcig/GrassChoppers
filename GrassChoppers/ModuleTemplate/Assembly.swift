@@ -19,7 +19,7 @@ final class AssemblyClass: Assembly {
     func assemble(container: Container) {
         
         container.register(ModuleType.self) { resolver in
-            return Module(resolver: container)
+            return Module(resolver: resolver)
         }
         
     }

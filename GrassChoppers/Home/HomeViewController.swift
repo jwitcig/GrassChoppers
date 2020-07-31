@@ -1,16 +1,12 @@
-//
-//  ViewController.swift
-//  GrassChoppers
-//
-//  Created by Developer on 7/30/20.
-//  Copyright © 2020 JwitApps. All rights reserved.
-//
-
+import SnapKit
 import UIKit
 
 class HomeViewController: UIViewController {
 
     private let logicController: HomeLogicControlling
+    
+    private let label = UILabel()
+    private let button = UIButton(type: .system)
     
     init(
         logicController: HomeLogicControlling
@@ -28,6 +24,25 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        
+        view.addSubview(label)
+        label.text = "Home"
+        label.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
+        
+        view.addSubview(button)
+        button.setTitle("press", for: .normal)
+        button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        button.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(label.snp.bottom)
+        }
+    }
+    
+    @objc private func buttonPressed() {
+        logicController.buttonPressed()
     }
 }
 

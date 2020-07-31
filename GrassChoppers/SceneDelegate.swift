@@ -1,17 +1,14 @@
-//
-//  SceneDelegate.swift
-//  GrassChoppers
-//
-//  Created by Developer on 7/30/20.
-//  Copyright © 2020 JwitApps. All rights reserved.
-//
-
+import Swinject
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    let servicesContainer = Container()
+    let featureContainer = Container()
 
+    var features: [Any] = []
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -19,8 +16,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        window = UIWindow(windowScene: windowScene)        
-        window?.rootViewController = UIViewController()
+        let homeFeature = HomeFeature(parentContainer: servicesContainer)
+        homeFeature.assemble(container: featureContainer)
+        features.append(homeFeature)
+        
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = homeFeature.createEntryViewController()
         window?.makeKeyAndVisible()
     }
 

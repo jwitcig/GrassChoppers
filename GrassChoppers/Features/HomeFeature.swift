@@ -15,7 +15,8 @@ class HomeFeature: Assembly {
     func privatelyAssemble() {
         
         HomeAssembly(
-            parentContainer: container
+            parentContainer: container,
+            routerFactory: HomeFeatureRouter.init
         ).assemble(container: container)
         
     }
@@ -24,5 +25,9 @@ class HomeFeature: Assembly {
         container.register(HomeModuleType.self) { resolver in
             return HomeModule(resolver: resolver)
         }
+    }
+    
+    func createEntryViewController() -> UIViewController {
+        return container.resolve(HomeModuleType.self)!.createViewController()
     }
 }

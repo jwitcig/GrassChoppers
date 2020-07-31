@@ -1,6 +1,6 @@
 import Swinject
 
-protocol Routing {
+protocol Routing: class {
     var viewController: UIViewController? { get set }
 }
 

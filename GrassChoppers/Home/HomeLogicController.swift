@@ -1,17 +1,19 @@
 protocol HomeLogicControlling: class {
     var delegate: HomeLogicControllingDelegate? { get set }
+    
+    func buttonPressed()
 }
 
 protocol HomeLogicControllingDelegate: class {
     
 }
 
-class HomeLogicController: LogicControlling {
+class HomeLogicController: HomeLogicControlling {
     
     private let dataManager: HomeDataManaging
     private let router: HomeRouting
     
-    weak var delegate: LogicControllingDelegate?
+    weak var delegate: HomeLogicControllingDelegate?
     
     init(
         dataManager: HomeDataManaging,
@@ -21,6 +23,10 @@ class HomeLogicController: LogicControlling {
         self.router = router
         
         self.dataManager.delegate = self
+    }
+    
+    func buttonPressed() {
+        router.routeToNextScreen()
     }
 }
 
