@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
+		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
+		8B56E45B24D3B70000EDDF41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45A24D3B70000EDDF41 /* ViewController.swift */; };
+		8B56E45E24D3B70000EDDF41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45C24D3B70000EDDF41 /* Main.storyboard */; };
+		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
+		8B56E46324D3B70100EDDF41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E46124D3B70100EDDF41 /* LaunchScreen.storyboard */; };
+		8B56E46E24D3B70100EDDF41 /* GrassChoppersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E46D24D3B70100EDDF41 /* GrassChoppersTests.swift */; };
+		8B56E47924D3B70100EDDF41 /* GrassChoppersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E47824D3B70100EDDF41 /* GrassChoppersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B56E46A24D3B70100EDDF41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B56E44B24D3B70000EDDF41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B56E45224D3B70000EDDF41;
+			remoteInfo = GrassChoppers;
+		};
+		8B56E47524D3B70100EDDF41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B56E44B24D3B70000EDDF41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B56E45224D3B70000EDDF41;
+			remoteInfo = GrassChoppers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B56E45A24D3B70000EDDF41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B56E45D24D3B70000EDDF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B56E45F24D3B70100EDDF41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B56E46224D3B70100EDDF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B56E46424D3B70100EDDF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B56E46924D3B70100EDDF41 /* GrassChoppersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrassChoppersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B56E46D24D3B70100EDDF41 /* GrassChoppersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrassChoppersTests.swift; sourceTree = "<group>"; };
+		8B56E46F24D3B70100EDDF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B56E47424D3B70100EDDF41 /* GrassChoppersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrassChoppersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B56E47824D3B70100EDDF41 /* GrassChoppersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrassChoppersUITests.swift; sourceTree = "<group>"; };
+		8B56E47A24D3B70100EDDF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B56E45024D3B70000EDDF41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B56E46624D3B70100EDDF41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B56E47124D3B70100EDDF41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B56E44A24D3B70000EDDF41 = {
+			isa = PBXGroup;
+			children = (
+				8B56E45524D3B70000EDDF41 /* GrassChoppers */,
+				8B56E46C24D3B70100EDDF41 /* GrassChoppersTests */,
+				8B56E47724D3B70100EDDF41 /* GrassChoppersUITests */,
+				8B56E45424D3B70000EDDF41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B56E45424D3B70000EDDF41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B56E45324D3B70000EDDF41 /* GrassChoppers.app */,
+				8B56E46924D3B70100EDDF41 /* GrassChoppersTests.xctest */,
+				8B56E47424D3B70100EDDF41 /* GrassChoppersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B56E45524D3B70000EDDF41 /* GrassChoppers */ = {
+			isa = PBXGroup;
+			children = (
+				8B56E45624D3B70000EDDF41 /* AppDelegate.swift */,
+				8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */,
+				8B56E45A24D3B70000EDDF41 /* ViewController.swift */,
+				8B56E45C24D3B70000EDDF41 /* Main.storyboard */,
+				8B56E45F24D3B70100EDDF41 /* Assets.xcassets */,
+				8B56E46124D3B70100EDDF41 /* LaunchScreen.storyboard */,
+				8B56E46424D3B70100EDDF41 /* Info.plist */,
+			);
+			path = GrassChoppers;
+			sourceTree = "<group>";
+		};
+		8B56E46C24D3B70100EDDF41 /* GrassChoppersTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B56E46D24D3B70100EDDF41 /* GrassChoppersTests.swift */,
+				8B56E46F24D3B70100EDDF41 /* Info.plist */,
+			);
+			path = GrassChoppersTests;
+			sourceTree = "<group>";
+		};
+		8B56E47724D3B70100EDDF41 /* GrassChoppersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B56E47824D3B70100EDDF41 /* GrassChoppersUITests.swift */,
+				8B56E47A24D3B70100EDDF41 /* Info.plist */,
+			);
+			path = GrassChoppersUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B56E45224D3B70000EDDF41 /* GrassChoppers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B56E47D24D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppers" */;
+			buildPhases = (
+				8B56E44F24D3B70000EDDF41 /* Sources */,
+				8B56E45024D3B70000EDDF41 /* Frameworks */,
+				8B56E45124D3B70000EDDF41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrassChoppers;
+			productName = GrassChoppers;
+			productReference = 8B56E45324D3B70000EDDF41 /* GrassChoppers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B56E46824D3B70100EDDF41 /* GrassChoppersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B56E48024D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppersTests" */;
+			buildPhases = (
+				8B56E46524D3B70100EDDF41 /* Sources */,
+				8B56E46624D3B70100EDDF41 /* Frameworks */,
+				8B56E46724D3B70100EDDF41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B56E46B24D3B70100EDDF41 /* PBXTargetDependency */,
+			);
+			name = GrassChoppersTests;
+			productName = GrassChoppersTests;
+			productReference = 8B56E46924D3B70100EDDF41 /* GrassChoppersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B56E47324D3B70100EDDF41 /* GrassChoppersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B56E48324D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppersUITests" */;
+			buildPhases = (
+				8B56E47024D3B70100EDDF41 /* Sources */,
+				8B56E47124D3B70100EDDF41 /* Frameworks */,
+				8B56E47224D3B70100EDDF41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B56E47624D3B70100EDDF41 /* PBXTargetDependency */,
+			);
+			name = GrassChoppersUITests;
+			productName = GrassChoppersUITests;
+			productReference = 8B56E47424D3B70100EDDF41 /* GrassChoppersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B56E44B24D3B70000EDDF41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = JwitApps;
+				TargetAttributes = {
+					8B56E45224D3B70000EDDF41 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					8B56E46824D3B70100EDDF41 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 8B56E45224D3B70000EDDF41;
+					};
+					8B56E47324D3B70100EDDF41 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 8B56E45224D3B70000EDDF41;
+					};
+				};
+			};
+			buildConfigurationList = 8B56E44E24D3B70000EDDF41 /* Build configuration list for PBXProject "GrassChoppers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B56E44A24D3B70000EDDF41;
+			productRefGroup = 8B56E45424D3B70000EDDF41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B56E45224D3B70000EDDF41 /* GrassChoppers */,
+				8B56E46824D3B70100EDDF41 /* GrassChoppersTests */,
+				8B56E47324D3B70100EDDF41 /* GrassChoppersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B56E45124D3B70000EDDF41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B56E46324D3B70100EDDF41 /* LaunchScreen.storyboard in Resources */,
+				8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */,
+				8B56E45E24D3B70000EDDF41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B56E46724D3B70100EDDF41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B56E47224D3B70100EDDF41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B56E44F24D3B70000EDDF41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B56E45B24D3B70000EDDF41 /* ViewController.swift in Sources */,
+				8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */,
+				8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B56E46524D3B70100EDDF41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B56E46E24D3B70100EDDF41 /* GrassChoppersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B56E47024D3B70100EDDF41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B56E47924D3B70100EDDF41 /* GrassChoppersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B56E46B24D3B70100EDDF41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B56E45224D3B70000EDDF41 /* GrassChoppers */;
+			targetProxy = 8B56E46A24D3B70100EDDF41 /* PBXContainerItemProxy */;
+		};
+		8B56E47624D3B70100EDDF41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B56E45224D3B70000EDDF41 /* GrassChoppers */;
+			targetProxy = 8B56E47524D3B70100EDDF41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B56E45C24D3B70000EDDF41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B56E45D24D3B70000EDDF41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B56E46124D3B70100EDDF41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B56E46224D3B70100EDDF41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B56E47B24D3B70100EDDF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B56E47C24D3B70100EDDF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B56E47E24D3B70100EDDF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				INFOPLIST_FILE = GrassChoppers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.GrassChoppers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B56E47F24D3B70100EDDF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				INFOPLIST_FILE = GrassChoppers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.GrassChoppers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B56E48124D3B70100EDDF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				INFOPLIST_FILE = GrassChoppersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.GrassChoppersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrassChoppers.app/GrassChoppers";
+			};
+			name = Debug;
+		};
+		8B56E48224D3B70100EDDF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				INFOPLIST_FILE = GrassChoppersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.GrassChoppersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrassChoppers.app/GrassChoppers";
+			};
+			name = Release;
+		};
+		8B56E48424D3B70100EDDF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				INFOPLIST_FILE = GrassChoppersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.GrassChoppersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrassChoppers;
+			};
+			name = Debug;
+		};
+		8B56E48524D3B70100EDDF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				INFOPLIST_FILE = GrassChoppersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.GrassChoppersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrassChoppers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B56E44E24D3B70000EDDF41 /* Build configuration list for PBXProject "GrassChoppers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B56E47B24D3B70100EDDF41 /* Debug */,
+				8B56E47C24D3B70100EDDF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B56E47D24D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B56E47E24D3B70100EDDF41 /* Debug */,
+				8B56E47F24D3B70100EDDF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B56E48024D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B56E48124D3B70100EDDF41 /* Debug */,
+				8B56E48224D3B70100EDDF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B56E48324D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B56E48424D3B70100EDDF41 /* Debug */,
+				8B56E48524D3B70100EDDF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B56E44B24D3B70000EDDF41 /* Project object */;
+}
