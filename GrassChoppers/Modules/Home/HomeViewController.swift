@@ -26,6 +26,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        
+        
         view.addSubview(label)
         label.text = "Home"
         label.snp.makeConstraints {
@@ -39,6 +41,8 @@ class HomeViewController: UIViewController {
             $0.centerX.equalToSuperview()
             $0.top.equalTo(label.snp.bottom)
         }
+        
+        logicController.viewDidLoad()
     }
     
     @objc private func buttonPressed() {
@@ -47,5 +51,9 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeLogicControllingDelegate {
-    
+    func update(name: String) {
+        
+        label.text = name
+        
+    }
 }
