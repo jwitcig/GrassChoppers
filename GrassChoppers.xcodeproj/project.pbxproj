@@ -23,6 +23,11 @@
 		8B15A8C724D3D49400195012 /* PromptAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C124D3D49400195012 /* PromptAssembly.swift */; };
 		8B15A8C824D3D49400195012 /* PromptDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C224D3D49400195012 /* PromptDataManager.swift */; };
 		8B15A8C924D3D49400195012 /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C324D3D49400195012 /* PromptViewController.swift */; };
+		8B15A8CE24D5111A00195012 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8CD24D5111A00195012 /* User.swift */; };
+		8B15A8D024D511A800195012 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8CF24D511A800195012 /* Review.swift */; };
+		8B15A8D224D512B300195012 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8D124D512B300195012 /* Identifier.swift */; };
+		8B15A8D424D512D700195012 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8D324D512D700195012 /* Announcement.swift */; };
+		8B15A8D624D5136100195012 /* DirectMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8D524D5136100195012 /* DirectMessage.swift */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
@@ -76,6 +81,11 @@
 		8B15A8C124D3D49400195012 /* PromptAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptAssembly.swift; sourceTree = "<group>"; };
 		8B15A8C224D3D49400195012 /* PromptDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptDataManager.swift; sourceTree = "<group>"; };
 		8B15A8C324D3D49400195012 /* PromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
+		8B15A8CD24D5111A00195012 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8B15A8CF24D511A800195012 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		8B15A8D124D512B300195012 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		8B15A8D324D512D700195012 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
+		8B15A8D524D5136100195012 /* DirectMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessage.swift; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +183,18 @@
 			path = GrassChoppers/Prompt;
 			sourceTree = SOURCE_ROOT;
 		};
+		8B15A8CC24D5111100195012 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B15A8D324D512D700195012 /* Announcement.swift */,
+				8B15A8D124D512B300195012 /* Identifier.swift */,
+				8B15A8D524D5136100195012 /* DirectMessage.swift */,
+				8B15A8CF24D511A800195012 /* Review.swift */,
+				8B15A8CD24D5111A00195012 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8B56E44A24D3B70000EDDF41 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +222,7 @@
 			children = (
 				8B56E45624D3B70000EDDF41 /* AppDelegate.swift */,
 				8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */,
+				8B15A8CC24D5111100195012 /* Models */,
 				8B15A8AA24D3C12A00195012 /* Features */,
 				8B15A8BC24D3D47700195012 /* Modules */,
 				8B56E45F24D3B70100EDDF41 /* Assets.xcassets */,
@@ -503,6 +526,7 @@
 			files = (
 				8B15A8C924D3D49400195012 /* PromptViewController.swift in Sources */,
 				8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */,
+				8B15A8D424D512D700195012 /* Announcement.swift in Sources */,
 				8B15A8C724D3D49400195012 /* PromptAssembly.swift in Sources */,
 				8B15A8A624D3C0A800195012 /* HomeDataManager.swift in Sources */,
 				8B15A8C624D3D49400195012 /* PromptModule.swift in Sources */,
@@ -518,11 +542,15 @@
 				8B15A8A824D3C0A800195012 /* HomeRouting.swift in Sources */,
 				8B15A8A424D3C0A800195012 /* HomeLogicController.swift in Sources */,
 				8B56E4AA24D3BA5B00EDDF41 /* ViewController.swift in Sources */,
+				8B15A8D024D511A800195012 /* Review.swift in Sources */,
 				8B15A8C424D3D49400195012 /* PromptRouting.swift in Sources */,
 				8B56E4AE24D3BA5B00EDDF41 /* Module.swift in Sources */,
 				8B56E4AC24D3BA5B00EDDF41 /* LogicController.swift in Sources */,
+				8B15A8D224D512B300195012 /* Identifier.swift in Sources */,
 				8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */,
+				8B15A8D624D5136100195012 /* DirectMessage.swift in Sources */,
 				8B15A8A724D3C0A800195012 /* HomeViewController.swift in Sources */,
+				8B15A8CE24D5111A00195012 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
