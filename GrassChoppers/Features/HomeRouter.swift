@@ -12,6 +12,7 @@ class HomeFeatureRouter: HomeRouting {
     }
     
     func routeToNextScreen() {
-        
+        let listViewController = resolver.resolve(ListModuleType.self)!.createViewController()
+        viewController?.present(listViewController, animated: true, completion: nil)
     }
 }
