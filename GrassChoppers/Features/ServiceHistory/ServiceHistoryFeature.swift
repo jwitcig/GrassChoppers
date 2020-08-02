@@ -8,11 +8,9 @@ class ServiceHistoryFeature: Assembly {
         parentContainer: Container
     ) {
         self.container = Container(parent: parentContainer)
-        
-        privatelyAssemble()
     }
     
-    func privatelyAssemble() {
+    func privatelyAssemble(somethingFromHome: String) {
         
         ListAssembly(
             parentContainer: container,
@@ -25,7 +23,7 @@ class ServiceHistoryFeature: Assembly {
                     adapter: adapter
                 )
             },
-            dataFactory: { _ in ServiceHistoryDataManager() },
+            dataFactory: { _ in ServiceHistoryDataManager(somethingFromHome: somethingFromHome) },
             routerFactory: ServiceHistoryFeatureRouter.init
         ).assemble(container: container)
         
@@ -37,7 +35,8 @@ class ServiceHistoryFeature: Assembly {
         }
     }
     
-    func createEntryViewController() -> UIViewController {
+    func createEntryViewController(somethingFromHome: String) -> UIViewController {
+        privatelyAssemble(somethingFromHome: somethingFromHome)
         return container.resolve(ListModuleType.self)!.createViewController()
     }
 }
