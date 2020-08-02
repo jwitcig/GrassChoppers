@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6145495A631A343270139452 /* Pods_GrassChoppersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6449AEDBEC2C295F09737911 /* Pods_GrassChoppersTests.framework */; };
-		6C743DEB0BFF0A880528EF0A /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E990D92A5DAA8167A75D007 /* Pods_GrassChoppers_GrassChoppersUITests.framework */; };
+		01F326D3AD61B95B0B582AE9 /* Pods_GrassChoppers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F232849733D148183C9D56 /* Pods_GrassChoppers.framework */; };
+		5CE769A5B76FA2BB2E493365 /* Pods_GrassChoppersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31285931FFD0F5ED76266420 /* Pods_GrassChoppersTests.framework */; };
 		8B15A8A424D3C0A800195012 /* HomeLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A89E24D3C0A800195012 /* HomeLogicController.swift */; };
 		8B15A8A524D3C0A800195012 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A89F24D3C0A800195012 /* HomeAssembly.swift */; };
 		8B15A8A624D3C0A800195012 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8A024D3C0A800195012 /* HomeDataManager.swift */; };
@@ -23,6 +23,8 @@
 		8B15A8C724D3D49400195012 /* PromptAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C124D3D49400195012 /* PromptAssembly.swift */; };
 		8B15A8C824D3D49400195012 /* PromptDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C224D3D49400195012 /* PromptDataManager.swift */; };
 		8B15A8C924D3D49400195012 /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C324D3D49400195012 /* PromptViewController.swift */; };
+		8B17D2AD24D72DB20051CFCB /* Extensions+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17D2AC24D72DB20051CFCB /* Extensions+CollectionView.swift */; };
+		8B17D2B024D72F370051CFCB /* GenericCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17D2AF24D72F370051CFCB /* GenericCells.swift */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
@@ -41,7 +43,7 @@
 		8B99907C24D71FFC00E7B675 /* ListLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907624D71FFC00E7B675 /* ListLogicController.swift */; };
 		8B99907D24D71FFC00E7B675 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907724D71FFC00E7B675 /* ListAssembly.swift */; };
 		8B99907E24D71FFC00E7B675 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907824D71FFC00E7B675 /* ListRouter.swift */; };
-		9701BB0638C1609BD1C582DA /* Pods_GrassChoppers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F6234C23FEB212E9B4566 /* Pods_GrassChoppers.framework */; };
+		ECA80C79257DB91ABB596D26 /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC5694BFD9AC2F4277420D3 /* Pods_GrassChoppers_GrassChoppersUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E990D92A5DAA8167A75D007 /* Pods_GrassChoppers_GrassChoppersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers_GrassChoppersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D306587B871AE1B5F62790A /* Pods-GrassChoppersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppersTests.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppersTests/Pods-GrassChoppersTests.release.xcconfig"; sourceTree = "<group>"; };
 		300D67B82E29FFDA9B27BB6C /* Pods-GrassChoppersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppersTests.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppersTests/Pods-GrassChoppersTests.debug.xcconfig"; sourceTree = "<group>"; };
-		497F6234C23FEB212E9B4566 /* Pods_GrassChoppers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6449AEDBEC2C295F09737911 /* Pods_GrassChoppersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31285931FFD0F5ED76266420 /* Pods_GrassChoppersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F232849733D148183C9D56 /* Pods_GrassChoppers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F0E95C70E2DFDDB2EA84D2 /* Pods-GrassChoppers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers.debug.xcconfig"; sourceTree = "<group>"; };
 		8B15A89E24D3C0A800195012 /* HomeLogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLogicController.swift; sourceTree = "<group>"; };
 		8B15A89F24D3C0A800195012 /* HomeAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
@@ -82,6 +83,8 @@
 		8B15A8C124D3D49400195012 /* PromptAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptAssembly.swift; sourceTree = "<group>"; };
 		8B15A8C224D3D49400195012 /* PromptDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptDataManager.swift; sourceTree = "<group>"; };
 		8B15A8C324D3D49400195012 /* PromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
+		8B17D2AC24D72DB20051CFCB /* Extensions+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+CollectionView.swift"; sourceTree = "<group>"; };
+		8B17D2AF24D72F370051CFCB /* GenericCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCells.swift; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 		8B99907824D71FFC00E7B675 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		A1D6460DA1C2C07098E1DC68 /* Pods-GrassChoppers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers.release.xcconfig"; sourceTree = "<group>"; };
 		B69CDA3151D5E36CA24F96F1 /* Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFC5694BFD9AC2F4277420D3 /* Pods_GrassChoppers_GrassChoppersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers_GrassChoppersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DE411DC9DE3DDE05C10636 /* Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9701BB0638C1609BD1C582DA /* Pods_GrassChoppers.framework in Frameworks */,
+				01F326D3AD61B95B0B582AE9 /* Pods_GrassChoppers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6145495A631A343270139452 /* Pods_GrassChoppersTests.framework in Frameworks */,
+				5CE769A5B76FA2BB2E493365 /* Pods_GrassChoppersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,13 +136,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C743DEB0BFF0A880528EF0A /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */,
+				ECA80C79257DB91ABB596D26 /* Pods_GrassChoppers_GrassChoppersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13DFCEBA3647975E749AC906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F232849733D148183C9D56 /* Pods_GrassChoppers.framework */,
+				BFC5694BFD9AC2F4277420D3 /* Pods_GrassChoppers_GrassChoppersUITests.framework */,
+				31285931FFD0F5ED76266420 /* Pods_GrassChoppersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B15A89D24D3C0A800195012 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +169,7 @@
 		8B15A8AA24D3C12A00195012 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				8B15A8AB24D3C13500195012 /* HomeFeature.swift */,
-				8B15A8BA24D3D3C600195012 /* HomeRouter.swift */,
+				8B17D2B124D735960051CFCB /* Home */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -186,6 +199,31 @@
 			path = GrassChoppers/Modules/Prompt;
 			sourceTree = SOURCE_ROOT;
 		};
+		8B17D2AE24D72DC20051CFCB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B17D2AC24D72DB20051CFCB /* Extensions+CollectionView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8B17D2B124D735960051CFCB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8B15A8AB24D3C13500195012 /* HomeFeature.swift */,
+				8B15A8BA24D3D3C600195012 /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8B17D2B724D736110051CFCB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B17D2AF24D72F370051CFCB /* GenericCells.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8B56E44A24D3B70000EDDF41 = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +232,7 @@
 				8B56E47724D3B70100EDDF41 /* GrassChoppersUITests */,
 				8B56E45424D3B70000EDDF41 /* Products */,
 				DD59EBF563B3E025D27E3814 /* Pods */,
-				CEB080415C5DA31B16177071 /* Frameworks */,
+				13DFCEBA3647975E749AC906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +253,7 @@
 				8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */,
 				8B15A8AA24D3C12A00195012 /* Features */,
 				8B15A8BC24D3D47700195012 /* Modules */,
+				8B17D2AE24D72DC20051CFCB /* Extensions */,
 				8B56E45F24D3B70100EDDF41 /* Assets.xcassets */,
 				8B56E46124D3B70100EDDF41 /* LaunchScreen.storyboard */,
 				8B56E46424D3B70100EDDF41 /* Info.plist */,
@@ -256,6 +295,7 @@
 		8B99907224D71FFC00E7B675 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				8B17D2B724D736110051CFCB /* Views */,
 				8B99907324D71FFC00E7B675 /* ListViewController.swift */,
 				8B99907424D71FFC00E7B675 /* ListDataManager.swift */,
 				8B99907524D71FFC00E7B675 /* ListModule.swift */,
@@ -264,16 +304,6 @@
 				8B99907824D71FFC00E7B675 /* ListRouter.swift */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		CEB080415C5DA31B16177071 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				497F6234C23FEB212E9B4566 /* Pods_GrassChoppers.framework */,
-				0E990D92A5DAA8167A75D007 /* Pods_GrassChoppers_GrassChoppersUITests.framework */,
-				6449AEDBEC2C295F09737911 /* Pods_GrassChoppersTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DD59EBF563B3E025D27E3814 /* Pods */ = {
@@ -542,12 +572,14 @@
 				8B56E4AB24D3BA5B00EDDF41 /* Assembly.swift in Sources */,
 				8B15A8C524D3D49400195012 /* PromptLogicController.swift in Sources */,
 				8B15A8A524D3C0A800195012 /* HomeAssembly.swift in Sources */,
+				8B17D2B024D72F370051CFCB /* GenericCells.swift in Sources */,
 				8B15A8BB24D3D3C600195012 /* HomeRouter.swift in Sources */,
 				8B56E4A924D3BA5B00EDDF41 /* DataManager.swift in Sources */,
 				8B15A8AC24D3C13500195012 /* HomeFeature.swift in Sources */,
 				8B56E4AD24D3BA5B00EDDF41 /* Router.swift in Sources */,
 				8B15A8A824D3C0A800195012 /* HomeRouting.swift in Sources */,
 				8B99907924D71FFC00E7B675 /* ListViewController.swift in Sources */,
+				8B17D2AD24D72DB20051CFCB /* Extensions+CollectionView.swift in Sources */,
 				8B15A8A424D3C0A800195012 /* HomeLogicController.swift in Sources */,
 				8B56E4AA24D3BA5B00EDDF41 /* ViewController.swift in Sources */,
 				8B15A8C424D3D49400195012 /* PromptRouting.swift in Sources */,

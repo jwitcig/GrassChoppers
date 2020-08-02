@@ -39,13 +39,6 @@ final class AssemblyClass: Assembly {
         }
         
         container.register(Router.self, factory: routerFactory)
-        
-        container.register(LogicControlling.self) { resolver in
-            return LogicController(
-                dataManager: resolver.resolve(DataManaging.self)!,
-                router: resolver.resolve(Routing.self)!
-            )
-        }
     }
     
     func assemble(container publicContainer: Container) {
