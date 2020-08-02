@@ -5,9 +5,3 @@ protocol ListDataManaging: class {
 protocol ListDataManagingDelegate: class {
     
 }
-
-class ListDataManager: ListDataManaging {
-    
-    weak var delegate: ListDataManagingDelegate?
-    
-}

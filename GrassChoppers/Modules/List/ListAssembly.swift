@@ -2,18 +2,26 @@ import Swinject
 
 final class ListAssembly: Assembly {
     
+    typealias Logic = ListLogicControlling
+    typealias Data = ListDataManaging
     typealias Router = ListRouting
-    
+
     private let container: Container
+    private let logicFactory: (Resolver) -> Logic
+    private let dataFactory: (Resolver) -> Data
     private let routerFactory: (Resolver) -> Router
-    
+
     init(
         parentContainer: Container,
+        logicFactory: @escaping (Resolver) -> Logic,
+        dataFactory: @escaping (Resolver) -> Data,
         routerFactory: @escaping (Resolver) -> Router
     ) {
         self.container = Container(parent: parentContainer)
+        self.logicFactory = logicFactory
+        self.dataFactory = dataFactory
         self.routerFactory = routerFactory
-        
+
         privatelyAssemble()
     }
 
@@ -21,31 +29,16 @@ final class ListAssembly: Assembly {
         
         container.register(ListViewController.self) { resolver in
             return ListViewController(
-                logicController: resolver.resolve(ListLogicControlling.self)!
+                logicController: resolver.resolve(ListLogicControlling.self)!,
+                adapter: resolver.resolve(CollectionViewAdapting.self)!
             )
         }.initCompleted { resolver, viewController in
             resolver.resolve(Router.self)!.viewController = viewController
         }
         
-        container.register(ListLogicControlling.self) { resolver in
-            return ListLogicController(
-                dataManager: resolver.resolve(ListDataManaging.self)!,
-                router: resolver.resolve(ListRouting.self)!
-            )
-        }
-        
-        container.register(ListDataManaging.self) { resolver in
-            return ListDataManager()
-        }
-        
+        container.register(Logic.self, factory: logicFactory)
+        container.register(Data.self, factory: dataFactory)
         container.register(Router.self, factory: routerFactory)
-        
-        container.register(ListLogicControlling.self) { resolver in
-            return ListLogicController(
-                dataManager: resolver.resolve(ListDataManaging.self)!,
-                router: resolver.resolve(Router.self)!
-            )
-        }
     }
     
     func assemble(container publicContainer: Container) {
