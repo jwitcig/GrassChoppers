@@ -1,23 +1,27 @@
 import Swinject
 
-final class ListAssembly: Assembly {
+final class ListAssembly<Adapter: CollectionViewAdapting, DataManaging>: Assembly {
     
+    typealias View = ListViewController
     typealias Logic = ListLogicControlling
-    typealias Data = ListDataManaging
+    typealias Data = DataManaging
     typealias Router = ListRouting
 
     private let container: Container
-    private let logicFactory: (Resolver) -> Logic
+    private let adapterFactory: (Resolver) -> Adapter
+    private let logicFactory: (Resolver, Data, Adapter) -> Logic
     private let dataFactory: (Resolver) -> Data
     private let routerFactory: (Resolver) -> Router
 
     init(
         parentContainer: Container,
-        logicFactory: @escaping (Resolver) -> Logic,
+        adapterFactory: @escaping (Resolver) -> Adapter,
+        logicFactory: @escaping (Resolver, Data, Adapter) -> Logic,
         dataFactory: @escaping (Resolver) -> Data,
         routerFactory: @escaping (Resolver) -> Router
     ) {
         self.container = Container(parent: parentContainer)
+        self.adapterFactory = adapterFactory
         self.logicFactory = logicFactory
         self.dataFactory = dataFactory
         self.routerFactory = routerFactory
@@ -30,13 +34,16 @@ final class ListAssembly: Assembly {
         container.register(ListViewController.self) { resolver in
             return ListViewController(
                 logicController: resolver.resolve(ListLogicControlling.self)!,
-                adapter: resolver.resolve(CollectionViewAdapting.self)!
+                adapter: resolver.resolve(Adapter.self)!
             )
         }.initCompleted { resolver, viewController in
             resolver.resolve(Router.self)!.viewController = viewController
         }
         
-        container.register(Logic.self, factory: logicFactory)
+        container.register(Adapter.self, factory: adapterFactory)
+        container.register(Logic.self, factory: { resolver in
+            self.logicFactory(resolver, resolver.resolve(Data.self)!, resolver.resolve(Adapter.self)!)
+        })
         container.register(Data.self, factory: dataFactory)
         container.register(Router.self, factory: routerFactory)
     }

@@ -19,6 +19,10 @@ class HomeFeature: Assembly {
             routerFactory: HomeFeatureRouter.init
         ).assemble(container: container)
         
+        ServiceHistoryFeature(
+            parentContainer: container
+        ).assemble(container: container)
+        
     }
     
     func assemble(container: Container) {

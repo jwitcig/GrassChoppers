@@ -46,6 +46,8 @@ class ListViewController: UIViewController {
         view.backgroundColor = .white
         
         setupAppearance()
+        
+        logicController.componentDidLoad()
     }
     
     private func setupAppearance() {
