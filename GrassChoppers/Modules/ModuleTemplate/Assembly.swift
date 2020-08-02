@@ -48,10 +48,10 @@ final class AssemblyClass: Assembly {
         }
     }
     
-    func assemble(container: Container) {
+    func assemble(container publicContainer: Container) {
         
-        container.register(ModuleType.self) { resolver in
-            return Module(resolver: resolver)
+        publicContainer.register(ModuleType.self) { resolver in
+            return Module(resolver: self.container)
         }
         
     }

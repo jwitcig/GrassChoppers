@@ -35,6 +35,12 @@
 		8B56E4AC24D3BA5B00EDDF41 /* LogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A624D3BA5B00EDDF41 /* LogicController.swift */; };
 		8B56E4AD24D3BA5B00EDDF41 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A724D3BA5B00EDDF41 /* Router.swift */; };
 		8B56E4AE24D3BA5B00EDDF41 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E4A824D3BA5B00EDDF41 /* Module.swift */; };
+		8B99907924D71FFC00E7B675 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907324D71FFC00E7B675 /* ListViewController.swift */; };
+		8B99907A24D71FFC00E7B675 /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907424D71FFC00E7B675 /* ListDataManager.swift */; };
+		8B99907B24D71FFC00E7B675 /* ListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907524D71FFC00E7B675 /* ListModule.swift */; };
+		8B99907C24D71FFC00E7B675 /* ListLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907624D71FFC00E7B675 /* ListLogicController.swift */; };
+		8B99907D24D71FFC00E7B675 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907724D71FFC00E7B675 /* ListAssembly.swift */; };
+		8B99907E24D71FFC00E7B675 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99907824D71FFC00E7B675 /* ListRouter.swift */; };
 		9701BB0638C1609BD1C582DA /* Pods_GrassChoppers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F6234C23FEB212E9B4566 /* Pods_GrassChoppers.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +100,12 @@
 		8B56E4A624D3BA5B00EDDF41 /* LogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicController.swift; sourceTree = "<group>"; };
 		8B56E4A724D3BA5B00EDDF41 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8B56E4A824D3BA5B00EDDF41 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		8B99907324D71FFC00E7B675 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		8B99907424D71FFC00E7B675 /* ListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataManager.swift; sourceTree = "<group>"; };
+		8B99907524D71FFC00E7B675 /* ListModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModule.swift; sourceTree = "<group>"; };
+		8B99907624D71FFC00E7B675 /* ListLogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLogicController.swift; sourceTree = "<group>"; };
+		8B99907724D71FFC00E7B675 /* ListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
+		8B99907824D71FFC00E7B675 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		A1D6460DA1C2C07098E1DC68 /* Pods-GrassChoppers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppers/Pods-GrassChoppers.release.xcconfig"; sourceTree = "<group>"; };
 		B69CDA3151D5E36CA24F96F1 /* Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig"; path = "Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C0DE411DC9DE3DDE05C10636 /* Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig"; path = "Target Support Files/Pods-GrassChoppers-GrassChoppersUITests/Pods-GrassChoppers-GrassChoppersUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,8 +164,9 @@
 		8B15A8BC24D3D47700195012 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8B15A8BD24D3D49400195012 /* Prompt */,
 				8B15A89D24D3C0A800195012 /* Home */,
+				8B99907224D71FFC00E7B675 /* List */,
+				8B15A8BD24D3D49400195012 /* Prompt */,
 				8B56E4A224D3BA5B00EDDF41 /* ModuleTemplate */,
 			);
 			path = Modules;
@@ -170,7 +183,7 @@
 				8B15A8C324D3D49400195012 /* PromptViewController.swift */,
 			);
 			name = Prompt;
-			path = GrassChoppers/Prompt;
+			path = GrassChoppers/Modules/Prompt;
 			sourceTree = SOURCE_ROOT;
 		};
 		8B56E44A24D3B70000EDDF41 = {
@@ -238,6 +251,19 @@
 				8B56E4A824D3BA5B00EDDF41 /* Module.swift */,
 			);
 			path = ModuleTemplate;
+			sourceTree = "<group>";
+		};
+		8B99907224D71FFC00E7B675 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8B99907324D71FFC00E7B675 /* ListViewController.swift */,
+				8B99907424D71FFC00E7B675 /* ListDataManager.swift */,
+				8B99907524D71FFC00E7B675 /* ListModule.swift */,
+				8B99907624D71FFC00E7B675 /* ListLogicController.swift */,
+				8B99907724D71FFC00E7B675 /* ListAssembly.swift */,
+				8B99907824D71FFC00E7B675 /* ListRouter.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		CEB080415C5DA31B16177071 /* Frameworks */ = {
@@ -502,10 +528,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B15A8C924D3D49400195012 /* PromptViewController.swift in Sources */,
+				8B99907A24D71FFC00E7B675 /* ListDataManager.swift in Sources */,
+				8B99907C24D71FFC00E7B675 /* ListLogicController.swift in Sources */,
 				8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */,
 				8B15A8C724D3D49400195012 /* PromptAssembly.swift in Sources */,
 				8B15A8A624D3C0A800195012 /* HomeDataManager.swift in Sources */,
 				8B15A8C624D3D49400195012 /* PromptModule.swift in Sources */,
+				8B99907B24D71FFC00E7B675 /* ListModule.swift in Sources */,
+				8B99907E24D71FFC00E7B675 /* ListRouter.swift in Sources */,
+				8B99907D24D71FFC00E7B675 /* ListAssembly.swift in Sources */,
 				8B15A8C824D3D49400195012 /* PromptDataManager.swift in Sources */,
 				8B15A8A924D3C0A800195012 /* HomeModule.swift in Sources */,
 				8B56E4AB24D3BA5B00EDDF41 /* Assembly.swift in Sources */,
@@ -516,6 +547,7 @@
 				8B15A8AC24D3C13500195012 /* HomeFeature.swift in Sources */,
 				8B56E4AD24D3BA5B00EDDF41 /* Router.swift in Sources */,
 				8B15A8A824D3C0A800195012 /* HomeRouting.swift in Sources */,
+				8B99907924D71FFC00E7B675 /* ListViewController.swift in Sources */,
 				8B15A8A424D3C0A800195012 /* HomeLogicController.swift in Sources */,
 				8B56E4AA24D3BA5B00EDDF41 /* ViewController.swift in Sources */,
 				8B15A8C424D3D49400195012 /* PromptRouting.swift in Sources */,
