@@ -19,6 +19,11 @@ class HomeFeature: Assembly {
             routerFactory: HomeFeatureRouter.init
         ).assemble(container: container)
         
+        ReviewAssembly(
+            parentContainer: container,
+            routerFactory: ReviewRouter.init
+        ).assemble(container: container)
+        
     }
     
     func assemble(container: Container) {

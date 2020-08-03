@@ -8,6 +8,7 @@ target 'GrassChoppers' do
   # Pods for GrassChoppers
   pod 'Swinject'
   pod 'SnapKit'
+  pod 'Cosmos', '~> 22.1'
 
 
   target 'GrassChoppersTests' do

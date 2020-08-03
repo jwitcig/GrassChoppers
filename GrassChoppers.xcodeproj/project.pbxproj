@@ -29,6 +29,7 @@
 		8B4CD3A224D7B0CB00E40F52 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39C24D7B0CB00E40F52 /* ReviewViewController.swift */; };
 		8B4CD3A324D7B0CB00E40F52 /* ReviewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39D24D7B0CB00E40F52 /* ReviewModule.swift */; };
 		8B4CD3A424D7B0CB00E40F52 /* ReviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39E24D7B0CB00E40F52 /* ReviewDataManager.swift */; };
+		8B4CD3A724D7B85F00E40F52 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3A624D7B85F00E40F52 /* StarRatingView.swift */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
@@ -94,6 +95,7 @@
 		8B4CD39C24D7B0CB00E40F52 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		8B4CD39D24D7B0CB00E40F52 /* ReviewModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewModule.swift; sourceTree = "<group>"; };
 		8B4CD39E24D7B0CB00E40F52 /* ReviewDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewDataManager.swift; sourceTree = "<group>"; };
+		8B4CD3A624D7B85F00E40F52 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		8B4CD39824D7B0CB00E40F52 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				8B4CD3A524D7B84E00E40F52 /* Views */,
 				8B4CD39924D7B0CB00E40F52 /* ReviewRouter.swift */,
 				8B4CD39A24D7B0CB00E40F52 /* ReviewAssembly.swift */,
 				8B4CD39B24D7B0CB00E40F52 /* ReviewLogicController.swift */,
@@ -210,6 +213,14 @@
 				8B4CD39E24D7B0CB00E40F52 /* ReviewDataManager.swift */,
 			);
 			path = Review;
+			sourceTree = "<group>";
+		};
+		8B4CD3A524D7B84E00E40F52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CD3A624D7B85F00E40F52 /* StarRatingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8B56E44A24D3B70000EDDF41 = {
@@ -586,6 +597,7 @@
 				8B56E4AE24D3BA5B00EDDF41 /* Module.swift in Sources */,
 				8B56E4AC24D3BA5B00EDDF41 /* LogicController.swift in Sources */,
 				8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */,
+				8B4CD3A724D7B85F00E40F52 /* StarRatingView.swift in Sources */,
 				8B15A8A724D3C0A800195012 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
