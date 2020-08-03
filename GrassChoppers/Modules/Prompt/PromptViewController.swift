@@ -6,10 +6,17 @@
 //  Copyright © 2020 JwitApps. All rights reserved.
 //
 
+import SnapKit
 import UIKit
 
 class PromptViewController: UIViewController {
 
+    private let titleLabel = UILabel()
+    private let subtitleLabel = UILabel()
+    
+    private let acceptButton = UIButton()
+    private let dismissButton = UIButton()
+    
     private let logicController: PromptLogicControlling
     
     init(
@@ -28,6 +35,64 @@ class PromptViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .white
+        
+        setupAppearance()
+        setupConstraints()
+    }
+    
+    private func setupAppearance() {
+        // title
+        titleLabel.text = "title"
+        view.addSubview(titleLabel)
+                
+        // subtitle
+        subtitleLabel.text = "subtitle"
+        view.addSubview(subtitleLabel)
+        
+        // accept button
+        acceptButton.setTitle("accept", for: .normal)
+        acceptButton.setTitleColor(.black, for: .normal)
+        acceptButton.backgroundColor = .green
+        view.addSubview(acceptButton)
+        
+        // dismiss button
+        dismissButton.setTitle("dismiss", for: .normal)
+        dismissButton.setTitleColor(.black, for: .normal)
+        view.addSubview(dismissButton)
+    }
+    
+    private func setupConstraints() {
+        
+        // title
+        titleLabel.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        
+        // subtitle
+        subtitleLabel.snp.makeConstraints { make in
+            make.centerX.equalTo(titleLabel.snp.centerX)
+            make.top.equalTo(titleLabel.snp.bottom).offset(20)
+        }
+        
+        // accept button
+        acceptButton.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(44)
+            
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(dismissButton.snp.top).offset(-16)
+        }
+     
+        // dismiss button
+        dismissButton.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(44)
+            
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-16)
+        }
     }
 }
 
