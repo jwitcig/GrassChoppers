@@ -23,6 +23,12 @@
 		8B15A8C724D3D49400195012 /* PromptAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C124D3D49400195012 /* PromptAssembly.swift */; };
 		8B15A8C824D3D49400195012 /* PromptDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C224D3D49400195012 /* PromptDataManager.swift */; };
 		8B15A8C924D3D49400195012 /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15A8C324D3D49400195012 /* PromptViewController.swift */; };
+		8B4CD39F24D7B0CB00E40F52 /* ReviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39924D7B0CB00E40F52 /* ReviewRouter.swift */; };
+		8B4CD3A024D7B0CB00E40F52 /* ReviewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39A24D7B0CB00E40F52 /* ReviewAssembly.swift */; };
+		8B4CD3A124D7B0CB00E40F52 /* ReviewLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39B24D7B0CB00E40F52 /* ReviewLogicController.swift */; };
+		8B4CD3A224D7B0CB00E40F52 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39C24D7B0CB00E40F52 /* ReviewViewController.swift */; };
+		8B4CD3A324D7B0CB00E40F52 /* ReviewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39D24D7B0CB00E40F52 /* ReviewModule.swift */; };
+		8B4CD3A424D7B0CB00E40F52 /* ReviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39E24D7B0CB00E40F52 /* ReviewDataManager.swift */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
@@ -82,6 +88,12 @@
 		8B15A8C124D3D49400195012 /* PromptAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptAssembly.swift; sourceTree = "<group>"; };
 		8B15A8C224D3D49400195012 /* PromptDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptDataManager.swift; sourceTree = "<group>"; };
 		8B15A8C324D3D49400195012 /* PromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
+		8B4CD39924D7B0CB00E40F52 /* ReviewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewRouter.swift; sourceTree = "<group>"; };
+		8B4CD39A24D7B0CB00E40F52 /* ReviewAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewAssembly.swift; sourceTree = "<group>"; };
+		8B4CD39B24D7B0CB00E40F52 /* ReviewLogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewLogicController.swift; sourceTree = "<group>"; };
+		8B4CD39C24D7B0CB00E40F52 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		8B4CD39D24D7B0CB00E40F52 /* ReviewModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewModule.swift; sourceTree = "<group>"; };
+		8B4CD39E24D7B0CB00E40F52 /* ReviewDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewDataManager.swift; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +179,7 @@
 				8B15A89D24D3C0A800195012 /* Home */,
 				8B99907224D71FFC00E7B675 /* List */,
 				8B15A8BD24D3D49400195012 /* Prompt */,
+				8B4CD39824D7B0CB00E40F52 /* Review */,
 				8B56E4A224D3BA5B00EDDF41 /* ModuleTemplate */,
 			);
 			path = Modules;
@@ -185,6 +198,19 @@
 			name = Prompt;
 			path = GrassChoppers/Modules/Prompt;
 			sourceTree = SOURCE_ROOT;
+		};
+		8B4CD39824D7B0CB00E40F52 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CD39924D7B0CB00E40F52 /* ReviewRouter.swift */,
+				8B4CD39A24D7B0CB00E40F52 /* ReviewAssembly.swift */,
+				8B4CD39B24D7B0CB00E40F52 /* ReviewLogicController.swift */,
+				8B4CD39C24D7B0CB00E40F52 /* ReviewViewController.swift */,
+				8B4CD39D24D7B0CB00E40F52 /* ReviewModule.swift */,
+				8B4CD39E24D7B0CB00E40F52 /* ReviewDataManager.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
 		};
 		8B56E44A24D3B70000EDDF41 = {
 			isa = PBXGroup;
@@ -527,19 +553,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4CD3A324D7B0CB00E40F52 /* ReviewModule.swift in Sources */,
 				8B15A8C924D3D49400195012 /* PromptViewController.swift in Sources */,
 				8B99907A24D71FFC00E7B675 /* ListDataManager.swift in Sources */,
 				8B99907C24D71FFC00E7B675 /* ListLogicController.swift in Sources */,
 				8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */,
 				8B15A8C724D3D49400195012 /* PromptAssembly.swift in Sources */,
 				8B15A8A624D3C0A800195012 /* HomeDataManager.swift in Sources */,
+				8B4CD3A224D7B0CB00E40F52 /* ReviewViewController.swift in Sources */,
 				8B15A8C624D3D49400195012 /* PromptModule.swift in Sources */,
 				8B99907B24D71FFC00E7B675 /* ListModule.swift in Sources */,
 				8B99907E24D71FFC00E7B675 /* ListRouter.swift in Sources */,
+				8B4CD3A124D7B0CB00E40F52 /* ReviewLogicController.swift in Sources */,
 				8B99907D24D71FFC00E7B675 /* ListAssembly.swift in Sources */,
 				8B15A8C824D3D49400195012 /* PromptDataManager.swift in Sources */,
+				8B4CD3A024D7B0CB00E40F52 /* ReviewAssembly.swift in Sources */,
 				8B15A8A924D3C0A800195012 /* HomeModule.swift in Sources */,
 				8B56E4AB24D3BA5B00EDDF41 /* Assembly.swift in Sources */,
+				8B4CD3A424D7B0CB00E40F52 /* ReviewDataManager.swift in Sources */,
 				8B15A8C524D3D49400195012 /* PromptLogicController.swift in Sources */,
 				8B15A8A524D3C0A800195012 /* HomeAssembly.swift in Sources */,
 				8B15A8BB24D3D3C600195012 /* HomeRouter.swift in Sources */,
@@ -548,6 +579,7 @@
 				8B56E4AD24D3BA5B00EDDF41 /* Router.swift in Sources */,
 				8B15A8A824D3C0A800195012 /* HomeRouting.swift in Sources */,
 				8B99907924D71FFC00E7B675 /* ListViewController.swift in Sources */,
+				8B4CD39F24D7B0CB00E40F52 /* ReviewRouter.swift in Sources */,
 				8B15A8A424D3C0A800195012 /* HomeLogicController.swift in Sources */,
 				8B56E4AA24D3BA5B00EDDF41 /* ViewController.swift in Sources */,
 				8B15A8C424D3D49400195012 /* PromptRouting.swift in Sources */,
