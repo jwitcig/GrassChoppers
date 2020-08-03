@@ -11,6 +11,7 @@ import UIKit
 
 class PromptViewController: UIViewController {
 
+    private let imageView = UIImageView()
     private let titleLabel = UILabel()
     private let subtitleLabel = UILabel()
     
@@ -40,15 +41,25 @@ class PromptViewController: UIViewController {
         
         setupAppearance()
         setupConstraints()
+        
+        logicController.viewDidLoad()
     }
     
     private func setupAppearance() {
+        
+        // image view
+        imageView.contentMode = .scaleAspectFit
+        view.addSubview(imageView)
+        
         // title
-        titleLabel.text = "title"
+        titleLabel.textAlignment = .center
+        titleLabel.numberOfLines = 0
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
         view.addSubview(titleLabel)
                 
         // subtitle
-        subtitleLabel.text = "subtitle"
+        subtitleLabel.textAlignment = .center
+        subtitleLabel.numberOfLines = 0
         view.addSubview(subtitleLabel)
         
         // accept button
@@ -65,15 +76,24 @@ class PromptViewController: UIViewController {
     
     private func setupConstraints() {
         
+        // image view
+        imageView.snp.makeConstraints { make in
+            make.width.equalTo(200)
+            make.height.equalTo(200)
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(titleLabel.snp.top).offset(-64)
+        }
+        
         // title
         titleLabel.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(16)
         }
         
         // subtitle
         subtitleLabel.snp.makeConstraints { make in
-            make.centerX.equalTo(titleLabel.snp.centerX)
             make.top.equalTo(titleLabel.snp.bottom).offset(20)
+            make.leading.trailing.equalToSuperview().inset(16)
         }
         
         // accept button
@@ -98,4 +118,12 @@ class PromptViewController: UIViewController {
 
 extension PromptViewController: PromptLogicControllingDelegate {
     
+    func update(title: String, subtitle: String?) {
+        titleLabel.text = title
+        subtitleLabel.text = subtitle
+    }
+    
+    func update(image: UIImage?) {
+        imageView.image = image
+    }
 }

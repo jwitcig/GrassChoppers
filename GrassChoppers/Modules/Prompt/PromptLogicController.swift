@@ -1,9 +1,14 @@
+import UIKit
+
 protocol PromptLogicControlling: class {
     var delegate: PromptLogicControllingDelegate? { get set }
+    
+    func viewDidLoad()
 }
 
 protocol PromptLogicControllingDelegate: class {
-    
+    func update(title: String, subtitle: String?)
+    func update(image: UIImage?)
 }
 
 class PromptLogicController: PromptLogicControlling {
@@ -22,8 +27,19 @@ class PromptLogicController: PromptLogicControlling {
         
         self.dataManager.delegate = self
     }
+    
+    func viewDidLoad() {
+        dataManager.requestInitialState()
+    }
 }
 
 extension PromptLogicController: PromptDataManagingDelegate {
     
+    func didFetch(title: String, subtitle: String?) {
+        delegate?.update(title: title, subtitle: subtitle)
+    }
+    
+    func didFetch(image: UIImage?) {
+        delegate?.update(image: image)
+    }
 }
