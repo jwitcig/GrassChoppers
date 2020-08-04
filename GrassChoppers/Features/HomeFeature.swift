@@ -16,7 +16,8 @@ class HomeFeature: Assembly {
         
         HomeAssembly(
             parentContainer: container,
-            routerFactory: HomeFeatureRouter.init
+            routerFactory: HomeFeatureRouter.init,
+            theme: .dark
         ).assemble(container: container)
         
     }
