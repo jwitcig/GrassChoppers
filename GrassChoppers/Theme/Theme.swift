@@ -3,8 +3,6 @@ import UIKit
 
 protocol ThemeColors {
     var backgroundColor: UIColor { get }
-    var actionText: UIColor { get }
-    var bodyText: UIColor { get }
 }
 
 protocol ThemeLayout {
@@ -43,6 +41,7 @@ protocol TextStyles {
     var body: TextStyle { get }
     var header: TextStyle { get }
     var subheader: TextStyle { get }
+    var action: TextStyle { get }
 }
 
 struct Theme: ThemeType {

@@ -18,4 +18,10 @@ struct BaseTextStyles: TextStyles {
         fontSize: 18,
         fontColor: .black
     )
+    
+    let action = TextStyle(
+        font: .avenir(weight: .regular),
+        fontSize: 24,
+        fontColor: .systemBlue
+    )
 }

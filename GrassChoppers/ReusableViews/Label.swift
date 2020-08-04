@@ -23,7 +23,8 @@ class Button: UIButton {
     init(theme: Theme) {
         super.init(frame: .zero)
         
-        setTitleColor(theme.colors.actionText, for: .normal)
+        setTitleColor(theme.textStyles.action.fontColor, for: .normal)
+        titleLabel?.font = theme.textStyles.action.font.font.withSize(theme.textStyles.action.fontSize)
     }
     
     required init?(coder: NSCoder) {

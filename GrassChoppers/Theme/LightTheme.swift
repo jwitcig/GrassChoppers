@@ -5,6 +5,7 @@ struct LightThemeTextStyles: TextStyles {
     let header: TextStyle
     let subheader: TextStyle
     let body: TextStyle
+    let action: TextStyle
     
     init() {
         let textStyles = BaseTextStyles()
@@ -12,13 +13,12 @@ struct LightThemeTextStyles: TextStyles {
         self.header = textStyles.header.with(fontColor: .black)
         self.subheader = textStyles.subheader.with(fontColor: .black)
         self.body = textStyles.body.with(fontColor: .black)
+        self.action = textStyles.action
     }
 }
 
 struct LightThemeColors: ThemeColors {
     let backgroundColor: UIColor = .white
-    let actionText: UIColor = .black
-    let bodyText: UIColor = .black
 }
 
 extension Theme {

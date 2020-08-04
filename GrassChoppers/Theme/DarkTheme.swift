@@ -5,6 +5,7 @@ private struct DarkThemeTextStyles: TextStyles {
     let header: TextStyle
     let subheader: TextStyle
     let body: TextStyle
+    let action: TextStyle
     
     init() {
         let textStyles = BaseTextStyles()
@@ -12,13 +13,12 @@ private struct DarkThemeTextStyles: TextStyles {
         self.header = textStyles.header.with(fontColor: .white)
         self.subheader = textStyles.subheader.with(fontColor: .white)
         self.body = textStyles.body.with(fontColor: .white)
+        self.action = textStyles.action
     }
 }
 
 private struct Colors: ThemeColors {
     let backgroundColor: UIColor = .black
-    let actionText: UIColor = .white
-    let bodyText: UIColor = .white
 }
 
 extension Theme {
