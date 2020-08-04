@@ -39,6 +39,25 @@ class HomeViewController: UIViewController {
             $0.centerX.equalToSuperview()
             $0.top.equalTo(label.snp.bottom)
         }
+        
+        
+        
+        let promptHistoryManager = PromptHistoryManager()
+        
+        
+        // record
+        let event = PromptEvent(
+            type: .notifications,
+            trigger: .appLaunch,
+            timestamp: Date(),
+            session: "asdfasdfasdfasd",
+            response: .accepted
+        )
+        promptHistoryManager.record(event: event)
+        
+        // fetch
+        let events = promptHistoryManager.fetchEvents()
+        print(events)
     }
     
     @objc private func buttonPressed() {
