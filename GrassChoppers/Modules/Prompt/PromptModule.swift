@@ -15,6 +15,6 @@ final class PromptModule: PromptModuleType {
     }
     
     func createViewController() -> UIViewController {
-        return resolver.resolve(PromptViewController.self)!
+        return resolver.resolve(PromptAssembly.View.self)!
     }
 }

@@ -2,27 +2,44 @@ import Swinject
 
 final class PromptAssembly: Assembly {
     
+    enum DisplayMode {
+        case fullScreen
+        case card
+    }
+    
+    typealias View = PromptViewControlling & UIViewController
     typealias Router = PromptRouting
     
     private let container: Container
     private let routerFactory: (Resolver) -> Router
     
+    private let displayMode: DisplayMode
+    
     init(
         parentContainer: Container,
-        routerFactory: @escaping (Resolver) -> Router
+        routerFactory: @escaping (Resolver) -> Router,
+        displayMode: DisplayMode
     ) {
         self.container = Container(parent: parentContainer)
         self.routerFactory = routerFactory
+        self.displayMode = displayMode
         
         privatelyAssemble()
     }
 
     private func privatelyAssemble() {
         
-        container.register(PromptViewController.self) { resolver in
-            return PromptViewController(
-                logicController: resolver.resolve(PromptLogicControlling.self)!
-            )
+        container.register(View.self) { [displayMode] resolver in
+            switch displayMode {
+            case .fullScreen:
+                return FullScreenPromptViewController(
+                    logicController: resolver.resolve(PromptLogicControlling.self)!
+                )
+            case .card:
+                return CardPromptViewController(
+                    logicController: resolver.resolve(PromptLogicControlling.self)!
+                )
+            }
         }.initCompleted { resolver, viewController in
             resolver.resolve(PromptRouting.self)!.viewController = viewController
         }
@@ -39,19 +56,12 @@ final class PromptAssembly: Assembly {
         }
         
         container.register(Router.self, factory: routerFactory)
-        
-        container.register(PromptLogicControlling.self) { resolver in
-            return PromptLogicController(
-                dataManager: resolver.resolve(PromptDataManaging.self)!,
-                router: resolver.resolve(PromptRouting.self)!
-            )
-        }
     }
     
-    func assemble(container: Container) {
+    func assemble(container publicContainer: Container) {
         
-        container.register(PromptModuleType.self) { resolver in
-            return PromptModule(resolver: resolver)
+        publicContainer.register(PromptModuleType.self) { resolver in
+            return PromptModule(resolver: self.container)
         }
         
     }

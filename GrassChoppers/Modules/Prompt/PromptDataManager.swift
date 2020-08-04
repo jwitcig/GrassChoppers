@@ -22,7 +22,7 @@ class PromptDataManager: PromptDataManaging {
         DispatchQueue.main.async {
             self.delegate?.didFetch(
                 title: "some title from the database",
-                subtitle: "some subtitle from the database, some subtitle from the database, some subtitle from the database, some subtitle from the database"
+                subtitle: "some subtitle from the database, some subtitle from the database"
             )
             
             self.delegate?.didFetch(image: #imageLiteral(resourceName: "push-notification-placeholder"))
