@@ -9,7 +9,8 @@ final class HomeAssembly: Assembly {
     
     init(
         parentContainer: Container,
-        routerFactory: @escaping (Resolver) -> Router
+        routerFactory: @escaping (Resolver) -> Router,
+        theme: Theme<ThemeColors, ThemeLayout>
     ) {
         self.container = Container(parent: parentContainer)
         self.routerFactory = routerFactory
