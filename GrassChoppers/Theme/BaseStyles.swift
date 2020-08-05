@@ -58,3 +58,22 @@ struct BaseButtonStyles: ButtonStyles {
         )
     }
 }
+
+struct BaseTextFieldStyles: TextFieldStyles {
+    
+    let primary: TextFieldStyle
+
+    init() {
+        self.primary = TextFieldStyle(
+            font: .avenir(weight: .medium),
+            fontSize: 18,
+            fontColor: .green,
+            backgroundColor: .clear,
+            borderColor: .green,
+            borderWidth: 2,
+            borderCornerRadius: 8,
+            placeholderColor: .green,
+            cursorColor: .green
+        )
+    }
+}

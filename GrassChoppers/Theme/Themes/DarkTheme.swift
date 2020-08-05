@@ -30,6 +30,17 @@ private struct DarkThemeButtonStyles: ButtonStyles {
     }
 }
 
+struct DarkThemeTextFieldStyles: TextFieldStyles {
+    
+    let primary: TextFieldStyle
+    
+    init() {
+        let baseStyles = BaseTextFieldStyles()
+        
+        self.primary = baseStyles.primary
+    }
+}
+
 private struct Colors: ThemeColors {
     let backgroundColor: UIColor = .black
     let noticeBackgroundColor: UIColor = .green
@@ -40,6 +51,7 @@ extension Theme {
         colors: Colors(),
         layout: StandardLayout(),
         textStyles: DarkThemeTextStyles(),
+        textFieldStyles: DarkThemeTextFieldStyles(),
         buttonStyles: DarkThemeButtonStyles()
     )
 }

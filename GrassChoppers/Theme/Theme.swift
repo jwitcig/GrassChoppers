@@ -16,6 +16,7 @@ protocol ThemeType {
     var colors: ThemeColors { get }
     var layout: ThemeLayout { get }
     var textStyles: TextStyles { get }
+    var textFieldStyles: TextFieldStyles { get }
     var buttonStyles: ButtonStyles { get }
 }
 
@@ -54,6 +55,35 @@ struct ButtonStyle {
     }
 }
 
+struct TextFieldStyle {
+    let font: FontSelection
+    let fontSize: CGFloat
+    let fontColor: UIColor
+    let backgroundColor: UIColor
+    let borderColor: UIColor
+    let borderWidth: CGFloat
+    let borderCornerRadius: CGFloat
+    let placeholderColor: UIColor
+    let cursorColor: UIColor
+    
+    func with(
+        fontColor: UIColor? = nil,
+        backgroundColor: UIColor? = nil
+    ) -> TextFieldStyle {
+        return TextFieldStyle(
+            font: font,
+            fontSize: fontSize,
+            fontColor: fontColor ?? self.fontColor,
+            backgroundColor: backgroundColor ?? self.backgroundColor,
+            borderColor: borderColor,
+            borderWidth: borderWidth,
+            borderCornerRadius: borderCornerRadius,
+            placeholderColor: placeholderColor,
+            cursorColor: cursorColor
+        )
+    }
+}
+
 protocol FontWeightType {
     var `extension`: String { get }
 }
@@ -76,21 +106,28 @@ protocol ButtonStyles {
     var floating: ButtonStyle { get }
 }
 
+protocol TextFieldStyles {
+    var primary: TextFieldStyle { get }
+}
+
 struct Theme: ThemeType {
     let colors: ThemeColors
     let layout: ThemeLayout
     let textStyles: TextStyles
+    let textFieldStyles: TextFieldStyles
     let buttonStyles: ButtonStyles
-    
+
     init(
         colors: ThemeColors = LightThemeColors(),
         layout: ThemeLayout = StandardLayout(),
         textStyles: TextStyles = LightThemeTextStyles(),
+        textFieldStyles: TextFieldStyles = LightThemeTextFieldStyles(),
         buttonStyles: ButtonStyles = LightThemeButtonStyles()
     ) {
         self.colors = colors
         self.layout = layout
         self.textStyles = textStyles
+        self.textFieldStyles = textFieldStyles
         self.buttonStyles = buttonStyles
     }
 }

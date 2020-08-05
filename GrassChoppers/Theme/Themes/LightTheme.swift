@@ -30,6 +30,17 @@ struct LightThemeButtonStyles: ButtonStyles {
     }
 }
 
+struct LightThemeTextFieldStyles: TextFieldStyles {
+    
+    let primary: TextFieldStyle
+    
+    init() {
+        let baseStyles = BaseTextFieldStyles()
+        
+        self.primary = baseStyles.primary
+    }
+}
+
 struct LightThemeColors: ThemeColors {
     let backgroundColor: UIColor = .white
     let noticeBackgroundColor: UIColor = .lightGray
@@ -39,6 +50,8 @@ extension Theme {
     static let light = Theme(
         colors: LightThemeColors(),
         layout: StandardLayout(),
-        textStyles: LightThemeTextStyles()
+        textStyles: LightThemeTextStyles(),
+        textFieldStyles: LightThemeTextFieldStyles(),
+        buttonStyles: LightThemeButtonStyles()
     )
 }
