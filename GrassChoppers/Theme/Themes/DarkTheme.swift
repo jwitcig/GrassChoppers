@@ -1,3 +1,4 @@
+import ThemeKit
 import UIKit
 
 private struct DarkThemeTextStyles: TextStyles {

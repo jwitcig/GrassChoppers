@@ -1,9 +1,9 @@
 import UIKit
 
-enum FontSelection {
+public enum FontSelection {
     case avenir(weight: AvenirFontWeight)
     
-    var font: UIFont {
+    public var font: UIFont {
         switch self {
         case .avenir(let weight):
             return UIFont(name: "Avenir-\(weight.extension)")!
@@ -17,7 +17,7 @@ private extension UIFont {
     }
 }
 
-enum AvenirFontWeight: String, FontWeightType {
+public enum AvenirFontWeight: String, FontWeightType {
     case light = "Light"
     case regular = "Book"
     case medium = "Medium"

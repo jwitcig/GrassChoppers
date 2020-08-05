@@ -1,4 +1,5 @@
 import Swinject
+import ThemeKit
 
 final class LoginAssembly: Assembly {
     

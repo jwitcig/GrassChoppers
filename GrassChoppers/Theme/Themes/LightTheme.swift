@@ -1,3 +1,4 @@
+import ThemeKit
 import UIKit
 
 struct LightThemeTextStyles: TextStyles {

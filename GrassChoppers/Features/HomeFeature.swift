@@ -1,4 +1,5 @@
 import Swinject
+import ThemeKit
 
 class HomeFeature: Assembly {
     

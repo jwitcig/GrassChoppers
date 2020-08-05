@@ -1,3 +1,4 @@
+import ThemeKit
 
 struct BaseTextStyles: TextStyles {
     

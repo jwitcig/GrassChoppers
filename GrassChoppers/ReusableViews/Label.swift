@@ -1,3 +1,4 @@
+import ThemeKit
 import UIKit
 
 class Label: UILabel {

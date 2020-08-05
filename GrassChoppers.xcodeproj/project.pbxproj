@@ -32,8 +32,6 @@
 		8B4CD3C724DA44ED00E40F52 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C024DA44ED00E40F52 /* LightTheme.swift */; };
 		8B4CD3C824DA44ED00E40F52 /* BaseStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C124DA44ED00E40F52 /* BaseStyles.swift */; };
 		8B4CD3C924DA44ED00E40F52 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C224DA44ED00E40F52 /* DarkTheme.swift */; };
-		8B4CD3CA24DA44ED00E40F52 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C324DA44ED00E40F52 /* Theme.swift */; };
-		8B4CD3CB24DA44ED00E40F52 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C424DA44ED00E40F52 /* Font.swift */; };
 		8B4CD3CC24DA44ED00E40F52 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C624DA44ED00E40F52 /* Label.swift */; };
 		8B4CD3CF24DA451800E40F52 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3CE24DA451800E40F52 /* Button.swift */; };
 		8B4CD3D624DA478900E40F52 /* FullScreenPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3D424DA478900E40F52 /* FullScreenPromptViewController.swift */; };
@@ -45,6 +43,13 @@
 		8B4CD3E424DA5A1F00E40F52 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3DE24DA5A1E00E40F52 /* LoginDataManager.swift */; };
 		8B4CD3E524DA5A1F00E40F52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3DF24DA5A1E00E40F52 /* LoginViewController.swift */; };
 		8B4CD3E624DA5A1F00E40F52 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3E024DA5A1E00E40F52 /* LoginRouter.swift */; };
+		8B4CD3F524DA64B600E40F52 /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */; };
+		8B4CD3FC24DA64B600E40F52 /* ThemeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3FB24DA64B600E40F52 /* ThemeKitTests.swift */; };
+		8B4CD3FE24DA64B600E40F52 /* ThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4CD3EE24DA64B600E40F52 /* ThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B4CD40124DA64B600E40F52 /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */; };
+		8B4CD40324DA64B600E40F52 /* ThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B4CD40A24DA64DD00E40F52 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C424DA44ED00E40F52 /* Font.swift */; };
+		8B4CD40B24DA64EE00E40F52 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C324DA44ED00E40F52 /* Theme.swift */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
@@ -67,6 +72,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8B4CD3F624DA64B600E40F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B56E44B24D3B70000EDDF41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4CD3EB24DA64B600E40F52;
+			remoteInfo = ThemeKit;
+		};
+		8B4CD3F824DA64B600E40F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B56E44B24D3B70000EDDF41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B56E45224D3B70000EDDF41;
+			remoteInfo = GrassChoppers;
+		};
+		8B4CD3FF24DA64B600E40F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B56E44B24D3B70000EDDF41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4CD3EB24DA64B600E40F52;
+			remoteInfo = ThemeKit;
+		};
 		8B56E46A24D3B70100EDDF41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8B56E44B24D3B70000EDDF41 /* Project object */;
@@ -82,6 +108,20 @@
 			remoteInfo = GrassChoppers;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B4CD40224DA64B600E40F52 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B4CD40324DA64B600E40F52 /* ThemeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E990D92A5DAA8167A75D007 /* Pods_GrassChoppers_GrassChoppersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrassChoppers_GrassChoppersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +166,12 @@
 		8B4CD3DE24DA5A1E00E40F52 /* LoginDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
 		8B4CD3DF24DA5A1E00E40F52 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B4CD3E024DA5A1E00E40F52 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4CD3EE24DA64B600E40F52 /* ThemeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeKit.h; sourceTree = "<group>"; };
+		8B4CD3EF24DA64B600E40F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B4CD3F424DA64B600E40F52 /* ThemeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4CD3FB24DA64B600E40F52 /* ThemeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeKitTests.swift; sourceTree = "<group>"; };
+		8B4CD3FD24DA64B600E40F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,11 +202,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B4CD3E924DA64B600E40F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4CD3F124DA64B600E40F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4CD3F524DA64B600E40F52 /* ThemeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B56E45024D3B70000EDDF41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9701BB0638C1609BD1C582DA /* Pods_GrassChoppers.framework in Frameworks */,
+				8B4CD40124DA64B600E40F52 /* ThemeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +314,6 @@
 			children = (
 				8B4CD3CD24DA450D00E40F52 /* Themes */,
 				8B4CD3C124DA44ED00E40F52 /* BaseStyles.swift */,
-				8B4CD3C324DA44ED00E40F52 /* Theme.swift */,
-				8B4CD3C424DA44ED00E40F52 /* Font.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -290,12 +350,34 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		8B4CD3ED24DA64B600E40F52 /* ThemeKit */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CD3C324DA44ED00E40F52 /* Theme.swift */,
+				8B4CD3C424DA44ED00E40F52 /* Font.swift */,
+				8B4CD3EE24DA64B600E40F52 /* ThemeKit.h */,
+				8B4CD3EF24DA64B600E40F52 /* Info.plist */,
+			);
+			path = ThemeKit;
+			sourceTree = "<group>";
+		};
+		8B4CD3FA24DA64B600E40F52 /* ThemeKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CD3FB24DA64B600E40F52 /* ThemeKitTests.swift */,
+				8B4CD3FD24DA64B600E40F52 /* Info.plist */,
+			);
+			path = ThemeKitTests;
+			sourceTree = "<group>";
+		};
 		8B56E44A24D3B70000EDDF41 = {
 			isa = PBXGroup;
 			children = (
 				8B56E45524D3B70000EDDF41 /* GrassChoppers */,
 				8B56E46C24D3B70100EDDF41 /* GrassChoppersTests */,
 				8B56E47724D3B70100EDDF41 /* GrassChoppersUITests */,
+				8B4CD3ED24DA64B600E40F52 /* ThemeKit */,
+				8B4CD3FA24DA64B600E40F52 /* ThemeKitTests */,
 				8B56E45424D3B70000EDDF41 /* Products */,
 				DD59EBF563B3E025D27E3814 /* Pods */,
 				CEB080415C5DA31B16177071 /* Frameworks */,
@@ -308,6 +390,8 @@
 				8B56E45324D3B70000EDDF41 /* GrassChoppers.app */,
 				8B56E46924D3B70100EDDF41 /* GrassChoppersTests.xctest */,
 				8B56E47424D3B70100EDDF41 /* GrassChoppersUITests.xctest */,
+				8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */,
+				8B4CD3F424DA64B600E40F52 /* ThemeKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,7 +481,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8B4CD3E724DA64B600E40F52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4CD3FE24DA64B600E40F52 /* ThemeKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		8B4CD3EB24DA64B600E40F52 /* ThemeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4CD40824DA64B600E40F52 /* Build configuration list for PBXNativeTarget "ThemeKit" */;
+			buildPhases = (
+				8B4CD3E724DA64B600E40F52 /* Headers */,
+				8B4CD3E824DA64B600E40F52 /* Sources */,
+				8B4CD3E924DA64B600E40F52 /* Frameworks */,
+				8B4CD3EA24DA64B600E40F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThemeKit;
+			productName = ThemeKit;
+			productReference = 8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B4CD3F324DA64B600E40F52 /* ThemeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4CD40924DA64B600E40F52 /* Build configuration list for PBXNativeTarget "ThemeKitTests" */;
+			buildPhases = (
+				8B4CD3F024DA64B600E40F52 /* Sources */,
+				8B4CD3F124DA64B600E40F52 /* Frameworks */,
+				8B4CD3F224DA64B600E40F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B4CD3F724DA64B600E40F52 /* PBXTargetDependency */,
+				8B4CD3F924DA64B600E40F52 /* PBXTargetDependency */,
+			);
+			name = ThemeKitTests;
+			productName = ThemeKitTests;
+			productReference = 8B4CD3F424DA64B600E40F52 /* ThemeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8B56E45224D3B70000EDDF41 /* GrassChoppers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B56E47D24D3B70100EDDF41 /* Build configuration list for PBXNativeTarget "GrassChoppers" */;
@@ -407,10 +539,12 @@
 				8B56E45024D3B70000EDDF41 /* Frameworks */,
 				8B56E45124D3B70000EDDF41 /* Resources */,
 				EA7EAC8F0212C3B5DC8A7861 /* [CP] Embed Pods Frameworks */,
+				8B4CD40224DA64B600E40F52 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B4CD40024DA64B600E40F52 /* PBXTargetDependency */,
 			);
 			name = GrassChoppers;
 			productName = GrassChoppers;
@@ -466,6 +600,13 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = JwitApps;
 				TargetAttributes = {
+					8B4CD3EB24DA64B600E40F52 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					8B4CD3F324DA64B600E40F52 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 8B56E45224D3B70000EDDF41;
+					};
 					8B56E45224D3B70000EDDF41 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -495,11 +636,27 @@
 				8B56E45224D3B70000EDDF41 /* GrassChoppers */,
 				8B56E46824D3B70100EDDF41 /* GrassChoppersTests */,
 				8B56E47324D3B70100EDDF41 /* GrassChoppersUITests */,
+				8B4CD3EB24DA64B600E40F52 /* ThemeKit */,
+				8B4CD3F324DA64B600E40F52 /* ThemeKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8B4CD3EA24DA64B600E40F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4CD3F224DA64B600E40F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B56E45124D3B70000EDDF41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -629,6 +786,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8B4CD3E824DA64B600E40F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4CD40A24DA64DD00E40F52 /* Font.swift in Sources */,
+				8B4CD40B24DA64EE00E40F52 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4CD3F024DA64B600E40F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4CD3FC24DA64B600E40F52 /* ThemeKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B56E44F24D3B70000EDDF41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,7 +823,6 @@
 				8B99907E24D71FFC00E7B675 /* ListRouter.swift in Sources */,
 				8B4CD3E524DA5A1F00E40F52 /* LoginViewController.swift in Sources */,
 				8B4CD3C924DA44ED00E40F52 /* DarkTheme.swift in Sources */,
-				8B4CD3CA24DA44ED00E40F52 /* Theme.swift in Sources */,
 				8B4CD3CF24DA451800E40F52 /* Button.swift in Sources */,
 				8B4CD3E124DA5A1F00E40F52 /* LoginAssembly.swift in Sources */,
 				8B4CD3A124D7B0CB00E40F52 /* ReviewLogicController.swift in Sources */,
@@ -658,7 +831,6 @@
 				8B4CD3A024D7B0CB00E40F52 /* ReviewAssembly.swift in Sources */,
 				8B15A8A924D3C0A800195012 /* HomeModule.swift in Sources */,
 				8B56E4AB24D3BA5B00EDDF41 /* Assembly.swift in Sources */,
-				8B4CD3CB24DA44ED00E40F52 /* Font.swift in Sources */,
 				8B4CD3D924DA523E00E40F52 /* TextField.swift in Sources */,
 				8B4CD3A424D7B0CB00E40F52 /* ReviewDataManager.swift in Sources */,
 				8B4CD3E624DA5A1F00E40F52 /* LoginRouter.swift in Sources */,
@@ -705,6 +877,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8B4CD3F724DA64B600E40F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B4CD3EB24DA64B600E40F52 /* ThemeKit */;
+			targetProxy = 8B4CD3F624DA64B600E40F52 /* PBXContainerItemProxy */;
+		};
+		8B4CD3F924DA64B600E40F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B56E45224D3B70000EDDF41 /* GrassChoppers */;
+			targetProxy = 8B4CD3F824DA64B600E40F52 /* PBXContainerItemProxy */;
+		};
+		8B4CD40024DA64B600E40F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B4CD3EB24DA64B600E40F52 /* ThemeKit */;
+			targetProxy = 8B4CD3FF24DA64B600E40F52 /* PBXContainerItemProxy */;
+		};
 		8B56E46B24D3B70100EDDF41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8B56E45224D3B70000EDDF41 /* GrassChoppers */;
@@ -729,6 +916,100 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8B4CD40424DA64B600E40F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ThemeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.ThemeKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B4CD40524DA64B600E40F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ThemeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.ThemeKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B4CD40624DA64B600E40F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				INFOPLIST_FILE = ThemeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.ThemeKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrassChoppers.app/GrassChoppers";
+			};
+			name = Debug;
+		};
+		8B4CD40724DA64B600E40F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 349WFX4WJR;
+				INFOPLIST_FILE = ThemeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.ThemeKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrassChoppers.app/GrassChoppers";
+			};
+			name = Release;
+		};
 		8B56E47B24D3B70100EDDF41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -847,6 +1128,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67F0E95C70E2DFDDB2EA84D2 /* Pods-GrassChoppers.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 349WFX4WJR;
@@ -866,6 +1148,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1D6460DA1C2C07098E1DC68 /* Pods-GrassChoppers.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 349WFX4WJR;
@@ -972,6 +1255,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B4CD40824DA64B600E40F52 /* Build configuration list for PBXNativeTarget "ThemeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4CD40424DA64B600E40F52 /* Debug */,
+				8B4CD40524DA64B600E40F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B4CD40924DA64B600E40F52 /* Build configuration list for PBXNativeTarget "ThemeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4CD40624DA64B600E40F52 /* Debug */,
+				8B4CD40724DA64B600E40F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8B56E44E24D3B70000EDDF41 /* Build configuration list for PBXProject "GrassChoppers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
