@@ -1,13 +1,13 @@
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
-    private let logicController: LogicControlling
+    private let logicController: LoginLogicControlling
     
     private let theme: ThemeType
     
     init(
-        logicController: LogicControlling,
+        logicController: LoginLogicControlling,
         theme: ThemeType
     ) {
         self.logicController = logicController
@@ -38,6 +38,6 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: LogicControllingDelegate {
+extension LoginViewController: LoginLogicControllingDelegate {
     
 }

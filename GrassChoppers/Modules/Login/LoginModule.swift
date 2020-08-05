@@ -1,12 +1,12 @@
 import Swinject
 import UIKit
 
-protocol ModuleType {
+protocol LoginModuleType {
     
     func createViewController() -> UIViewController
 }
 
-final class Module: ModuleType {
+final class LoginModule: LoginModuleType {
     
     private let resolver: Resolver
     
@@ -15,6 +15,6 @@ final class Module: ModuleType {
     }
     
     func createViewController() -> UIViewController {
-        return resolver.resolve(AssemblyClass.View.self)!
+        return resolver.resolve(ViewController.self)!
     }
 }
