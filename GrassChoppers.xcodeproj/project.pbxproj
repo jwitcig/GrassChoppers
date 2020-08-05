@@ -60,6 +60,12 @@
 		8B4CD44424DAF52300E40F52 /* ServiceHistoryFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD43D24DAF52300E40F52 /* ServiceHistoryFeature.swift */; };
 		8B4CD44524DAF52300E40F52 /* ServiceHistoryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD43E24DAF52300E40F52 /* ServiceHistoryDataManager.swift */; };
 		8B4CD44824DAF55D00E40F52 /* GenericCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD44724DAF55D00E40F52 /* GenericCells.swift */; };
+		8B4CD45124DAF96500E40F52 /* MessagingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD44B24DAF96500E40F52 /* MessagingAssembly.swift */; };
+		8B4CD45224DAF96500E40F52 /* MessagingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD44C24DAF96500E40F52 /* MessagingRouter.swift */; };
+		8B4CD45324DAF96500E40F52 /* MessagingLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD44D24DAF96500E40F52 /* MessagingLogicController.swift */; };
+		8B4CD45424DAF96500E40F52 /* MessagingDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD44E24DAF96500E40F52 /* MessagingDataManager.swift */; };
+		8B4CD45524DAF96500E40F52 /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD44F24DAF96500E40F52 /* MessagingViewController.swift */; };
+		8B4CD45624DAF96500E40F52 /* MessagingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD45024DAF96500E40F52 /* MessagingModule.swift */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
@@ -212,6 +218,12 @@
 		8B4CD43D24DAF52300E40F52 /* ServiceHistoryFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHistoryFeature.swift; sourceTree = "<group>"; };
 		8B4CD43E24DAF52300E40F52 /* ServiceHistoryDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHistoryDataManager.swift; sourceTree = "<group>"; };
 		8B4CD44724DAF55D00E40F52 /* GenericCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCells.swift; sourceTree = "<group>"; };
+		8B4CD44B24DAF96500E40F52 /* MessagingAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingAssembly.swift; sourceTree = "<group>"; };
+		8B4CD44C24DAF96500E40F52 /* MessagingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingRouter.swift; sourceTree = "<group>"; };
+		8B4CD44D24DAF96500E40F52 /* MessagingLogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingLogicController.swift; sourceTree = "<group>"; };
+		8B4CD44E24DAF96500E40F52 /* MessagingDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingDataManager.swift; sourceTree = "<group>"; };
+		8B4CD44F24DAF96500E40F52 /* MessagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
+		8B4CD45024DAF96500E40F52 /* MessagingModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingModule.swift; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -319,6 +331,7 @@
 				8B15A89D24D3C0A800195012 /* Home */,
 				8B99907224D71FFC00E7B675 /* List */,
 				8B4CD3DA24DA5A1E00E40F52 /* Login */,
+				8B4CD44A24DAF96500E40F52 /* Messaging */,
 				8B15A8BD24D3D49400195012 /* Prompt */,
 				8B4CD39824D7B0CB00E40F52 /* Review */,
 				8B56E4A224D3BA5B00EDDF41 /* ModuleTemplate */,
@@ -461,6 +474,19 @@
 				8B4CD44724DAF55D00E40F52 /* GenericCells.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8B4CD44A24DAF96500E40F52 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CD44B24DAF96500E40F52 /* MessagingAssembly.swift */,
+				8B4CD44C24DAF96500E40F52 /* MessagingRouter.swift */,
+				8B4CD44D24DAF96500E40F52 /* MessagingLogicController.swift */,
+				8B4CD44E24DAF96500E40F52 /* MessagingDataManager.swift */,
+				8B4CD44F24DAF96500E40F52 /* MessagingViewController.swift */,
+				8B4CD45024DAF96500E40F52 /* MessagingModule.swift */,
+			);
+			path = Messaging;
 			sourceTree = "<group>";
 		};
 		8B56E44A24D3B70000EDDF41 = {
@@ -987,10 +1013,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4CD45124DAF96500E40F52 /* MessagingAssembly.swift in Sources */,
 				8B4CD3E224DA5A1F00E40F52 /* LoginLogicController.swift in Sources */,
 				8B4CD3A324D7B0CB00E40F52 /* ReviewModule.swift in Sources */,
 				8B15A8C924D3D49400195012 /* PromptViewController.swift in Sources */,
 				8B4CD3D724DA478900E40F52 /* CardPromptViewController.swift in Sources */,
+				8B4CD45324DAF96500E40F52 /* MessagingLogicController.swift in Sources */,
 				8B4CD44524DAF52300E40F52 /* ServiceHistoryDataManager.swift in Sources */,
 				8B4CD43424DAF4D700E40F52 /* Extensions+CollectionView.swift in Sources */,
 				8B99907C24D71FFC00E7B675 /* ListLogicController.swift in Sources */,
@@ -1008,6 +1036,7 @@
 				8B4CD3A124D7B0CB00E40F52 /* ReviewLogicController.swift in Sources */,
 				8B99907D24D71FFC00E7B675 /* ListAssembly.swift in Sources */,
 				8B15A8C824D3D49400195012 /* PromptDataManager.swift in Sources */,
+				8B4CD45224DAF96500E40F52 /* MessagingRouter.swift in Sources */,
 				8B4CD3A024D7B0CB00E40F52 /* ReviewAssembly.swift in Sources */,
 				8B4CD44024DAF52300E40F52 /* HomeFeature.swift in Sources */,
 				8B4CD43F24DAF52300E40F52 /* HomeRouter.swift in Sources */,
@@ -1021,6 +1050,7 @@
 				8B15A8C524D3D49400195012 /* PromptLogicController.swift in Sources */,
 				8B4CD3C724DA44ED00E40F52 /* LightTheme.swift in Sources */,
 				8B15A8A524D3C0A800195012 /* HomeAssembly.swift in Sources */,
+				8B4CD45524DAF96500E40F52 /* MessagingViewController.swift in Sources */,
 				8B4CD3E424DA5A1F00E40F52 /* LoginDataManager.swift in Sources */,
 				8B4CD3E324DA5A1F00E40F52 /* LoginModule.swift in Sources */,
 				8B56E4A924D3BA5B00EDDF41 /* DataManager.swift in Sources */,
@@ -1037,7 +1067,9 @@
 				8B56E4AC24D3BA5B00EDDF41 /* LogicController.swift in Sources */,
 				8B4CD44824DAF55D00E40F52 /* GenericCells.swift in Sources */,
 				8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */,
+				8B4CD45424DAF96500E40F52 /* MessagingDataManager.swift in Sources */,
 				8B15A8A724D3C0A800195012 /* HomeViewController.swift in Sources */,
+				8B4CD45624DAF96500E40F52 /* MessagingModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
