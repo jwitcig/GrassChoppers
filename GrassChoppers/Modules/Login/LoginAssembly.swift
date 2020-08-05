@@ -1,11 +1,11 @@
 import Swinject
 
-final class AssemblyClass: Assembly {
+final class LoginAssembly: Assembly {
     
-    typealias View = ViewController
-    typealias Logic = LogicControlling
-    typealias Data = DataManaging
-    typealias Router = Routing
+    typealias View = LoginViewController
+    typealias Logic = LoginLogicControlling
+    typealias Data = LoginDataManaging
+    typealias Router = LoginRouting
 
     private let container: Container
     private let routerFactory: (Resolver) -> Router
@@ -23,7 +23,7 @@ final class AssemblyClass: Assembly {
     private func privatelyAssemble() {
         
         container.register(View.self) { resolver in
-            return ViewController(
+            return LoginViewController(
                 logicController: resolver.resolve(Logic.self)!,
                 theme: resolver.resolve(ThemeType.self)!
             )
@@ -32,14 +32,14 @@ final class AssemblyClass: Assembly {
         }
         
         container.register(Logic.self) { resolver in
-            return LogicController(
+            return LoginLogicController(
                 dataManager: resolver.resolve(Data.self)!,
                 router: resolver.resolve(Router.self)!
             )
         }
         
         container.register(Data.self) { resolver in
-            return DataManager()
+            return LoginDataManager()
         }
         
         container.register(Router.self, factory: routerFactory)
