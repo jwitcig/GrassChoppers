@@ -11,16 +11,30 @@ import UIKit
 
 class ListViewController: UIViewController {
 
+    private lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.register(TitleCollectionViewCell.self)
+        collectionView.collectionViewLayout = UICollectionView.fullScreenWidthLayout()
+        collectionView.contentInsetAdjustmentBehavior = .always
+        collectionView.allowsSelection = true
+        collectionView.backgroundColor = .white
+        return collectionView
+    }()
+    
     private let logicController: ListLogicControlling
+    private let adapter: CollectionViewAdapting
     
     init(
-        logicController: ListLogicControlling
+        logicController: ListLogicControlling,
+        adapter: CollectionViewAdapting
     ) {
         self.logicController = logicController
+        self.adapter = adapter
         
         super.init(nibName: nil, bundle: nil)
         
         self.logicController.delegate = self
+        self.collectionView.dataSource = adapter
     }
     
     required init?(coder: NSCoder) {
@@ -29,9 +43,25 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        
+        setupAppearance()
+        
+        logicController.componentDidLoad()
+    }
+    
+    private func setupAppearance() {
+        view.addSubview(collectionView)
+        collectionView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 }
 
 extension ListViewController: ListLogicControllingDelegate {
-    
+    func updateData() {
+        collectionView.reloadData()
+    }
 }
+
+protocol CollectionViewAdapting: UICollectionViewDataSource, UICollectionViewDelegate { }
