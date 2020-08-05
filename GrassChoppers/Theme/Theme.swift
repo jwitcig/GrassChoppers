@@ -3,6 +3,7 @@ import UIKit
 
 protocol ThemeColors {
     var backgroundColor: UIColor { get }
+    var noticeBackgroundColor: UIColor { get }
 }
 
 protocol ThemeLayout {

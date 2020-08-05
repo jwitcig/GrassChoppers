@@ -6,8 +6,6 @@ class CardPromptViewController: PromptViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
-        
         setupAppearance()
         setupConstraints()
         
@@ -15,7 +13,9 @@ class CardPromptViewController: PromptViewController {
     }
     
     internal override func setupAppearance() {
-        view.backgroundColor = .systemBlue
+        super.setupAppearance()
+        
+        view.backgroundColor = theme.colors.noticeBackgroundColor.withAlphaComponent(0.4)
         view.layer.cornerRadius = 14
         
         view.addSubview(imageView)
@@ -26,12 +26,13 @@ class CardPromptViewController: PromptViewController {
         imageView.contentMode = .scaleAspectFit
         
         // title
+        titleLabel.set(textStyle: theme.textStyles.subheader)
         titleLabel.textAlignment = .left
         titleLabel.numberOfLines = 0
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
         titleLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
                 
         // subtitle
+        subtitleLabel.set(textStyle: theme.textStyles.body)
         subtitleLabel.textAlignment = .left
         subtitleLabel.numberOfLines = 0
         subtitleLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
@@ -49,17 +50,16 @@ class CardPromptViewController: PromptViewController {
         
         // title
         titleLabel.snp.makeConstraints {
-            $0.top.trailing.equalToSuperview().inset(16)
+            $0.top.trailing.equalToSuperview().inset(8)
             $0.leading.equalTo(imageView.snp.trailing).offset(16)
-            $0.bottom.lessThanOrEqualToSuperview().inset(16)
         }
         
         // subtitle
         subtitleLabel.snp.makeConstraints {
-            $0.top.equalTo(titleLabel.snp.bottom).offset(16)
+            $0.top.equalTo(titleLabel.snp.bottom)
             $0.trailing.equalToSuperview().inset(16)
             $0.leading.equalTo(imageView.snp.trailing).offset(16)
-            $0.bottom.lessThanOrEqualToSuperview().inset(16)
+            $0.bottom.lessThanOrEqualToSuperview().inset(8)
         }
     }
 }

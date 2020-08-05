@@ -32,6 +32,7 @@ struct LightThemeButtonStyles: ButtonStyles {
 
 struct LightThemeColors: ThemeColors {
     let backgroundColor: UIColor = .white
+    let noticeBackgroundColor: UIColor = .lightGray
 }
 
 extension Theme {
