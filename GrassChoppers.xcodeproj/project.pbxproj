@@ -41,14 +41,12 @@
 		8B4CD3E524DA5A1F00E40F52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3DF24DA5A1E00E40F52 /* LoginViewController.swift */; };
 		8B4CD3E624DA5A1F00E40F52 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3E024DA5A1E00E40F52 /* LoginRouter.swift */; };
 		8B4CD3F524DA64B600E40F52 /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */; };
-		8B4CD3FC24DA64B600E40F52 /* ThemeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3FB24DA64B600E40F52 /* ThemeKitTests.swift */; };
 		8B4CD3FE24DA64B600E40F52 /* ThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4CD3EE24DA64B600E40F52 /* ThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B4CD40124DA64B600E40F52 /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */; };
 		8B4CD40324DA64B600E40F52 /* ThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD3EC24DA64B600E40F52 /* ThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8B4CD40A24DA64DD00E40F52 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C424DA44ED00E40F52 /* Font.swift */; };
 		8B4CD40B24DA64EE00E40F52 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C324DA44ED00E40F52 /* Theme.swift */; };
 		8B4CD41A24DA6B2D00E40F52 /* ComponentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD41124DA6B2D00E40F52 /* ComponentKit.framework */; };
-		8B4CD42124DA6B2D00E40F52 /* ComponentKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD42024DA6B2D00E40F52 /* ComponentKitTests.swift */; };
 		8B4CD42324DA6B2D00E40F52 /* ComponentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4CD41324DA6B2D00E40F52 /* ComponentKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B4CD42624DA6B2D00E40F52 /* ComponentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD41124DA6B2D00E40F52 /* ComponentKit.framework */; };
 		8B4CD42724DA6B2D00E40F52 /* ComponentKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CD41124DA6B2D00E40F52 /* ComponentKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -197,14 +195,10 @@
 		8B4CD3EE24DA64B600E40F52 /* ThemeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeKit.h; sourceTree = "<group>"; };
 		8B4CD3EF24DA64B600E40F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B4CD3F424DA64B600E40F52 /* ThemeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B4CD3FB24DA64B600E40F52 /* ThemeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeKitTests.swift; sourceTree = "<group>"; };
-		8B4CD3FD24DA64B600E40F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B4CD41124DA6B2D00E40F52 /* ComponentKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComponentKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4CD41324DA6B2D00E40F52 /* ComponentKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentKit.h; sourceTree = "<group>"; };
 		8B4CD41424DA6B2D00E40F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B4CD41924DA6B2D00E40F52 /* ComponentKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B4CD42024DA6B2D00E40F52 /* ComponentKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentKitTests.swift; sourceTree = "<group>"; };
-		8B4CD42224DA6B2D00E40F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -367,13 +361,6 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		8B4CD3C524DA44ED00E40F52 /* ReusableViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ReusableViews;
-			sourceTree = "<group>";
-		};
 		8B4CD3CD24DA450D00E40F52 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,15 +394,6 @@
 			path = ThemeKit;
 			sourceTree = "<group>";
 		};
-		8B4CD3FA24DA64B600E40F52 /* ThemeKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				8B4CD3FB24DA64B600E40F52 /* ThemeKitTests.swift */,
-				8B4CD3FD24DA64B600E40F52 /* Info.plist */,
-			);
-			path = ThemeKitTests;
-			sourceTree = "<group>";
-		};
 		8B4CD41224DA6B2D00E40F52 /* ComponentKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,15 +402,6 @@
 				8B4CD41424DA6B2D00E40F52 /* Info.plist */,
 			);
 			path = ComponentKit;
-			sourceTree = "<group>";
-		};
-		8B4CD41F24DA6B2D00E40F52 /* ComponentKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				8B4CD42024DA6B2D00E40F52 /* ComponentKitTests.swift */,
-				8B4CD42224DA6B2D00E40F52 /* Info.plist */,
-			);
-			path = ComponentKitTests;
 			sourceTree = "<group>";
 		};
 		8B4CD43124DA6B4D00E40F52 /* Components */ = {
@@ -452,9 +421,7 @@
 				8B56E46C24D3B70100EDDF41 /* GrassChoppersTests */,
 				8B56E47724D3B70100EDDF41 /* GrassChoppersUITests */,
 				8B4CD3ED24DA64B600E40F52 /* ThemeKit */,
-				8B4CD3FA24DA64B600E40F52 /* ThemeKitTests */,
 				8B4CD41224DA6B2D00E40F52 /* ComponentKit */,
-				8B4CD41F24DA6B2D00E40F52 /* ComponentKitTests */,
 				8B56E45424D3B70000EDDF41 /* Products */,
 				DD59EBF563B3E025D27E3814 /* Pods */,
 				CEB080415C5DA31B16177071 /* Frameworks */,
@@ -480,7 +447,6 @@
 			children = (
 				8B56E45624D3B70000EDDF41 /* AppDelegate.swift */,
 				8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */,
-				8B4CD3C524DA44ED00E40F52 /* ReusableViews */,
 				8B4CD3BF24DA44ED00E40F52 /* Theme */,
 				8B15A8AA24D3C12A00195012 /* Features */,
 				8B15A8BC24D3D47700195012 /* Modules */,
@@ -947,7 +913,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B4CD3FC24DA64B600E40F52 /* ThemeKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -965,7 +930,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B4CD42124DA6B2D00E40F52 /* ComponentKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
