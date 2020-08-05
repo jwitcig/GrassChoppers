@@ -21,7 +21,8 @@ final class HomeAssembly: Assembly {
      
         container.register(HomeViewController.self) { resolver in
             return HomeViewController(
-                logicController: resolver.resolve(HomeLogicControlling.self)!
+                logicController: resolver.resolve(HomeLogicControlling.self)!,
+                theme: resolver.resolve(ThemeType.self)!
             )
         }.initCompleted { resolver, viewController in
             resolver.resolve(HomeRouting.self)!.viewController = viewController

@@ -19,6 +19,10 @@ class HomeFeature: Assembly {
             routerFactory: HomeFeatureRouter.init
         ).assemble(container: container)
         
+        container.register(ThemeType.self) { _ in
+            return Theme.dark
+        }
+        
     }
     
     func assemble(container: Container) {

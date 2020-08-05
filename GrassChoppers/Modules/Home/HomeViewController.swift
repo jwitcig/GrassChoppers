@@ -5,13 +5,19 @@ class HomeViewController: UIViewController {
 
     private let logicController: HomeLogicControlling
     
-    private let label = UILabel()
-    private let button = UIButton(type: .system)
+    private let label: Label
+    private let button: Button
+    
+    private let theme: ThemeType
     
     init(
-        logicController: HomeLogicControlling
+        logicController: HomeLogicControlling,
+        theme: ThemeType
     ) {
         self.logicController = logicController
+        self.label = Label(textStyle: theme.textStyles.header)
+        self.button = Button(style: theme.buttonStyles.primary)
+        self.theme = theme
         
         super.init(nibName: nil, bundle: nil)
         
@@ -24,7 +30,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = theme.colors.backgroundColor
         
         view.addSubview(label)
         label.text = "Home"
@@ -38,6 +44,7 @@ class HomeViewController: UIViewController {
         button.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.top.equalTo(label.snp.bottom)
+            $0.width.equalTo(80)
         }
     }
     

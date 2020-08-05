@@ -29,6 +29,13 @@
 		8B4CD3A224D7B0CB00E40F52 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39C24D7B0CB00E40F52 /* ReviewViewController.swift */; };
 		8B4CD3A324D7B0CB00E40F52 /* ReviewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39D24D7B0CB00E40F52 /* ReviewModule.swift */; };
 		8B4CD3A424D7B0CB00E40F52 /* ReviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD39E24D7B0CB00E40F52 /* ReviewDataManager.swift */; };
+		8B4CD3C724DA44ED00E40F52 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C024DA44ED00E40F52 /* LightTheme.swift */; };
+		8B4CD3C824DA44ED00E40F52 /* BaseStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C124DA44ED00E40F52 /* BaseStyles.swift */; };
+		8B4CD3C924DA44ED00E40F52 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C224DA44ED00E40F52 /* DarkTheme.swift */; };
+		8B4CD3CA24DA44ED00E40F52 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C324DA44ED00E40F52 /* Theme.swift */; };
+		8B4CD3CB24DA44ED00E40F52 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C424DA44ED00E40F52 /* Font.swift */; };
+		8B4CD3CC24DA44ED00E40F52 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3C624DA44ED00E40F52 /* Label.swift */; };
+		8B4CD3CF24DA451800E40F52 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD3CE24DA451800E40F52 /* Button.swift */; };
 		8B56E45724D3B70000EDDF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45624D3B70000EDDF41 /* AppDelegate.swift */; };
 		8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */; };
 		8B56E46024D3B70100EDDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B56E45F24D3B70100EDDF41 /* Assets.xcassets */; };
@@ -94,6 +101,13 @@
 		8B4CD39C24D7B0CB00E40F52 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		8B4CD39D24D7B0CB00E40F52 /* ReviewModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewModule.swift; sourceTree = "<group>"; };
 		8B4CD39E24D7B0CB00E40F52 /* ReviewDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewDataManager.swift; sourceTree = "<group>"; };
+		8B4CD3C024DA44ED00E40F52 /* LightTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		8B4CD3C124DA44ED00E40F52 /* BaseStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStyles.swift; sourceTree = "<group>"; };
+		8B4CD3C224DA44ED00E40F52 /* DarkTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		8B4CD3C324DA44ED00E40F52 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8B4CD3C424DA44ED00E40F52 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		8B4CD3C624DA44ED00E40F52 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		8B4CD3CE24DA451800E40F52 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		8B56E45324D3B70000EDDF41 /* GrassChoppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassChoppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B56E45624D3B70000EDDF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +226,35 @@
 			path = Review;
 			sourceTree = "<group>";
 		};
+		8B4CD3BF24DA44ED00E40F52 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CD3CD24DA450D00E40F52 /* Themes */,
+				8B4CD3C124DA44ED00E40F52 /* BaseStyles.swift */,
+				8B4CD3C324DA44ED00E40F52 /* Theme.swift */,
+				8B4CD3C424DA44ED00E40F52 /* Font.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		8B4CD3C524DA44ED00E40F52 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CD3CE24DA451800E40F52 /* Button.swift */,
+				8B4CD3C624DA44ED00E40F52 /* Label.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		8B4CD3CD24DA450D00E40F52 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CD3C024DA44ED00E40F52 /* LightTheme.swift */,
+				8B4CD3C224DA44ED00E40F52 /* DarkTheme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
 		8B56E44A24D3B70000EDDF41 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +282,8 @@
 			children = (
 				8B56E45624D3B70000EDDF41 /* AppDelegate.swift */,
 				8B56E45824D3B70000EDDF41 /* SceneDelegate.swift */,
+				8B4CD3C524DA44ED00E40F52 /* ReusableViews */,
+				8B4CD3BF24DA44ED00E40F52 /* Theme */,
 				8B15A8AA24D3C12A00195012 /* Features */,
 				8B15A8BC24D3D47700195012 /* Modules */,
 				8B56E45F24D3B70100EDDF41 /* Assets.xcassets */,
@@ -563,15 +608,21 @@
 				8B4CD3A224D7B0CB00E40F52 /* ReviewViewController.swift in Sources */,
 				8B15A8C624D3D49400195012 /* PromptModule.swift in Sources */,
 				8B99907B24D71FFC00E7B675 /* ListModule.swift in Sources */,
+				8B4CD3C824DA44ED00E40F52 /* BaseStyles.swift in Sources */,
 				8B99907E24D71FFC00E7B675 /* ListRouter.swift in Sources */,
+				8B4CD3C924DA44ED00E40F52 /* DarkTheme.swift in Sources */,
+				8B4CD3CA24DA44ED00E40F52 /* Theme.swift in Sources */,
+				8B4CD3CF24DA451800E40F52 /* Button.swift in Sources */,
 				8B4CD3A124D7B0CB00E40F52 /* ReviewLogicController.swift in Sources */,
 				8B99907D24D71FFC00E7B675 /* ListAssembly.swift in Sources */,
 				8B15A8C824D3D49400195012 /* PromptDataManager.swift in Sources */,
 				8B4CD3A024D7B0CB00E40F52 /* ReviewAssembly.swift in Sources */,
 				8B15A8A924D3C0A800195012 /* HomeModule.swift in Sources */,
 				8B56E4AB24D3BA5B00EDDF41 /* Assembly.swift in Sources */,
+				8B4CD3CB24DA44ED00E40F52 /* Font.swift in Sources */,
 				8B4CD3A424D7B0CB00E40F52 /* ReviewDataManager.swift in Sources */,
 				8B15A8C524D3D49400195012 /* PromptLogicController.swift in Sources */,
+				8B4CD3C724DA44ED00E40F52 /* LightTheme.swift in Sources */,
 				8B15A8A524D3C0A800195012 /* HomeAssembly.swift in Sources */,
 				8B15A8BB24D3D3C600195012 /* HomeRouter.swift in Sources */,
 				8B56E4A924D3BA5B00EDDF41 /* DataManager.swift in Sources */,
@@ -586,6 +637,7 @@
 				8B56E4AE24D3BA5B00EDDF41 /* Module.swift in Sources */,
 				8B56E4AC24D3BA5B00EDDF41 /* LogicController.swift in Sources */,
 				8B56E45924D3B70000EDDF41 /* SceneDelegate.swift in Sources */,
+				8B4CD3CC24DA44ED00E40F52 /* Label.swift in Sources */,
 				8B15A8A724D3C0A800195012 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
