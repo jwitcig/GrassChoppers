@@ -1,9 +1,9 @@
 import ThemeKit
 import UIKit
 
-class Button: UIButton {
+public class Button: UIButton {
     
-    init(style: ButtonStyle) {
+    public init(style: ButtonStyle) {
         super.init(frame: .zero)
         
         set(style: style)
@@ -13,7 +13,7 @@ class Button: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(style: ButtonStyle) {
+    public func set(style: ButtonStyle) {
         setTitleColor(style.fontColor, for: .normal)
         titleLabel?.font = style.font.font.withSize(style.fontSize)
         backgroundColor = style.backgroundColor

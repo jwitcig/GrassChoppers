@@ -1,9 +1,9 @@
 import ThemeKit
 import UIKit
 
-class Label: UILabel {
+public class Label: UILabel {
     
-    init(textStyle: TextStyle) {
+    public init(textStyle: TextStyle) {
         super.init(frame: .zero)
                 
         set(textStyle: textStyle)
@@ -13,7 +13,7 @@ class Label: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(textStyle: TextStyle) {
+    public func set(textStyle: TextStyle) {
         font = textStyle.font.font.withSize(textStyle.fontSize)
         textColor = textStyle.fontColor
     }

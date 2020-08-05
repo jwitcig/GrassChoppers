@@ -1,12 +1,12 @@
 import ThemeKit
 import UIKit
 
-class TextField: UITextField {
+public class TextField: UITextField {
     
     private let padding = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     private var style: TextFieldStyle
     
-    override var placeholder: String? {
+    public override var placeholder: String? {
         didSet {
             guard let placeholder = placeholder else { return }
             attributedPlaceholder = NSAttributedString(
@@ -18,7 +18,7 @@ class TextField: UITextField {
         }
     }
     
-    init(style: TextFieldStyle) {
+    public init(style: TextFieldStyle) {
         self.style = style
         
         super.init(frame: .zero)
@@ -40,7 +40,7 @@ class TextField: UITextField {
     }
 }
 
-extension TextField {
+public extension TextField {
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }
