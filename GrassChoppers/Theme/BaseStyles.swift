@@ -20,7 +20,6 @@ struct BaseTextStyles: TextStyles {
     )
 }
 
-
 struct BaseButtonStyles: ButtonStyles {
     
     let primary: ButtonStyle
