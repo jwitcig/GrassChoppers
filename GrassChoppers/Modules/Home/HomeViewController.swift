@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
     ) {
         self.logicController = logicController
         self.label = Label(textStyle: theme.textStyles.header)
-        self.button = Button(style: theme.buttonStyles.primary)
+        self.button = Button(style: theme.buttonStyles.secondary)
         self.theme = theme
         
         super.init(nibName: nil, bundle: nil)

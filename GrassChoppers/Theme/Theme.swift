@@ -3,6 +3,7 @@ import UIKit
 
 protocol ThemeColors {
     var backgroundColor: UIColor { get }
+    var noticeBackgroundColor: UIColor { get }
 }
 
 protocol ThemeLayout {
@@ -71,6 +72,8 @@ protocol TextStyles {
 
 protocol ButtonStyles {
     var primary: ButtonStyle { get }
+    var secondary: ButtonStyle { get }
+    var floating: ButtonStyle { get }
 }
 
 struct Theme: ThemeType {

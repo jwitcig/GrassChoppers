@@ -23,16 +23,38 @@ struct BaseTextStyles: TextStyles {
 struct BaseButtonStyles: ButtonStyles {
     
     let primary: ButtonStyle
-    
+    let secondary: ButtonStyle
+    let floating: ButtonStyle
+
     init() {
         self.primary = ButtonStyle(
-            font: .avenir(weight: .regular),
+            font: .avenir(weight: .medium),
+            fontSize: 18,
+            fontColor: .black,
+            backgroundColor: .green,
+            borderColor: .green,
+            borderWidth: 2,
+            borderCornerRadius: 8
+        )
+        
+        self.secondary = ButtonStyle(
+            font: .avenir(weight: .medium),
             fontSize: 18,
             fontColor: .green,
             backgroundColor: .clear,
             borderColor: .green,
             borderWidth: 2,
             borderCornerRadius: 8
+        )
+        
+        self.floating = ButtonStyle(
+            font: .avenir(weight: .medium),
+            fontSize: 18,
+            fontColor: .green,
+            backgroundColor: .clear,
+            borderColor: .clear,
+            borderWidth: 0,
+            borderCornerRadius: 0
         )
     }
 }
