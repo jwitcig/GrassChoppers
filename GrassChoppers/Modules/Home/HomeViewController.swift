@@ -46,6 +46,15 @@ class HomeViewController: UIViewController {
             $0.top.equalTo(label.snp.bottom)
             $0.width.equalTo(80)
         }
+        
+        let textField = TextField(style: theme.textFieldStyles.primary)
+        textField.placeholder = "some text here"
+        view.addSubview(textField)
+        textField.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.centerY.equalToSuperview().multipliedBy(1.5)
+            make.height.equalTo(44)
+        }
     }
     
     @objc private func buttonPressed() {
