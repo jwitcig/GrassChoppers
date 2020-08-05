@@ -8,15 +8,15 @@ class HomeViewController: UIViewController {
     private let label: Label
     private let button: Button
     
-    private let theme: Theme
+    private let theme: ThemeType
     
     init(
         logicController: HomeLogicControlling,
-        theme: Theme
+        theme: ThemeType
     ) {
         self.logicController = logicController
         self.label = Label(textStyle: theme.textStyles.header)
-        self.button = Button(theme: theme)
+        self.button = Button(style: theme.buttonStyles.primary)
         self.theme = theme
         
         super.init(nibName: nil, bundle: nil)
@@ -44,6 +44,7 @@ class HomeViewController: UIViewController {
         button.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.top.equalTo(label.snp.bottom)
+            $0.width.equalTo(80)
         }
     }
     

@@ -16,9 +16,12 @@ class HomeFeature: Assembly {
         
         HomeAssembly(
             parentContainer: container,
-            routerFactory: HomeFeatureRouter.init,
-            theme: .dark
+            routerFactory: HomeFeatureRouter.init
         ).assemble(container: container)
+        
+        container.register(ThemeType.self) { _ in
+            return Theme.dark
+        }
         
     }
     

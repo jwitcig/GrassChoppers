@@ -20,11 +20,15 @@ class Label: UILabel {
 
 class Button: UIButton {
     
-    init(theme: Theme) {
+    init(style: ButtonStyle) {
         super.init(frame: .zero)
         
-        setTitleColor(theme.textStyles.action.fontColor, for: .normal)
-        titleLabel?.font = theme.textStyles.action.font.font.withSize(theme.textStyles.action.fontSize)
+        setTitleColor(style.fontColor, for: .normal)
+        titleLabel?.font = style.font.font.withSize(style.fontSize)
+        backgroundColor = style.backgroundColor
+        layer.borderWidth = style.borderWidth
+        layer.borderColor = style.borderColor.cgColor
+        layer.cornerRadius = style.borderCornerRadius
     }
     
     required init?(coder: NSCoder) {

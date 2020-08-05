@@ -15,6 +15,7 @@ protocol ThemeType {
     var colors: ThemeColors { get }
     var layout: ThemeLayout { get }
     var textStyles: TextStyles { get }
+    var buttonStyles: ButtonStyles { get }
 }
 
 struct TextStyle {
@@ -24,6 +25,31 @@ struct TextStyle {
     
     func with(fontColor: UIColor) -> TextStyle {
         return TextStyle(font: font, fontSize: fontSize, fontColor: fontColor)
+    }
+}
+
+struct ButtonStyle {
+    let font: FontSelection
+    let fontSize: CGFloat
+    let fontColor: UIColor
+    let backgroundColor: UIColor
+    let borderColor: UIColor
+    let borderWidth: CGFloat
+    let borderCornerRadius: CGFloat
+    
+    func with(
+        fontColor: UIColor? = nil,
+        backgroundColor: UIColor? = nil
+    ) -> ButtonStyle {
+        return ButtonStyle(
+            font: font,
+            fontSize: fontSize,
+            fontColor: fontColor ?? self.fontColor,
+            backgroundColor: backgroundColor ?? self.backgroundColor,
+            borderColor: borderColor,
+            borderWidth: borderWidth,
+            borderCornerRadius: borderCornerRadius
+        )
     }
 }
 
@@ -41,22 +67,28 @@ protocol TextStyles {
     var body: TextStyle { get }
     var header: TextStyle { get }
     var subheader: TextStyle { get }
-    var action: TextStyle { get }
+}
+
+protocol ButtonStyles {
+    var primary: ButtonStyle { get }
 }
 
 struct Theme: ThemeType {
     let colors: ThemeColors
     let layout: ThemeLayout
     let textStyles: TextStyles
+    let buttonStyles: ButtonStyles
     
     init(
         colors: ThemeColors = LightThemeColors(),
         layout: ThemeLayout = StandardLayout(),
-        textStyles: TextStyles = LightThemeTextStyles()
+        textStyles: TextStyles = LightThemeTextStyles(),
+        buttonStyles: ButtonStyles = LightThemeButtonStyles()
     ) {
         self.colors = colors
         self.layout = layout
         self.textStyles = textStyles
+        self.buttonStyles = buttonStyles
     }
 }
 

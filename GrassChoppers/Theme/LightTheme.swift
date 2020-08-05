@@ -5,15 +5,24 @@ struct LightThemeTextStyles: TextStyles {
     let header: TextStyle
     let subheader: TextStyle
     let body: TextStyle
-    let action: TextStyle
     
     init() {
-        let textStyles = BaseTextStyles()
+        let baseStyles = BaseTextStyles()
         
-        self.header = textStyles.header.with(fontColor: .black)
-        self.subheader = textStyles.subheader.with(fontColor: .black)
-        self.body = textStyles.body.with(fontColor: .black)
-        self.action = textStyles.action
+        self.header = baseStyles.header.with(fontColor: .black)
+        self.subheader = baseStyles.subheader.with(fontColor: .black)
+        self.body = baseStyles.body.with(fontColor: .black)
+    }
+}
+
+struct LightThemeButtonStyles: ButtonStyles {
+    
+    let primary: ButtonStyle
+    
+    init() {
+        let baseStyles = BaseButtonStyles()
+        
+        self.primary = baseStyles.primary
     }
 }
 

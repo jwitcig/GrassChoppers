@@ -5,7 +5,6 @@ private struct DarkThemeTextStyles: TextStyles {
     let header: TextStyle
     let subheader: TextStyle
     let body: TextStyle
-    let action: TextStyle
     
     init() {
         let textStyles = BaseTextStyles()
@@ -13,7 +12,17 @@ private struct DarkThemeTextStyles: TextStyles {
         self.header = textStyles.header.with(fontColor: .white)
         self.subheader = textStyles.subheader.with(fontColor: .white)
         self.body = textStyles.body.with(fontColor: .white)
-        self.action = textStyles.action
+    }
+}
+
+private struct DarkThemeButtonStyles: ButtonStyles {
+    
+    let primary: ButtonStyle
+    
+    init() {
+        let baseStyles = BaseButtonStyles()
+        
+        self.primary = baseStyles.primary
     }
 }
 
@@ -25,6 +34,7 @@ extension Theme {
     static let dark = Theme(
         colors: Colors(),
         layout: StandardLayout(),
-        textStyles: DarkThemeTextStyles()
+        textStyles: DarkThemeTextStyles(),
+        buttonStyles: DarkThemeButtonStyles()
     )
 }

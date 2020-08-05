@@ -6,26 +6,23 @@ final class HomeAssembly: Assembly {
     
     private let container: Container
     private let routerFactory: (Resolver) -> Router
-    private let theme: Theme
     
     init(
         parentContainer: Container,
-        routerFactory: @escaping (Resolver) -> Router,
-        theme: Theme
+        routerFactory: @escaping (Resolver) -> Router
     ) {
         self.container = Container(parent: parentContainer)
         self.routerFactory = routerFactory
-        self.theme = theme
         
         privatelyAssemble()
     }
 
     private func privatelyAssemble() {
      
-        container.register(HomeViewController.self) { [theme] resolver in
+        container.register(HomeViewController.self) { resolver in
             return HomeViewController(
                 logicController: resolver.resolve(HomeLogicControlling.self)!,
-                theme: theme
+                theme: resolver.resolve(ThemeType.self)!
             )
         }.initCompleted { resolver, viewController in
             resolver.resolve(HomeRouting.self)!.viewController = viewController
