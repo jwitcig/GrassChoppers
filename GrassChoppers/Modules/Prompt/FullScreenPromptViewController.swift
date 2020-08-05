@@ -5,16 +5,15 @@ class FullScreenPromptViewController: PromptViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .white
-        
+                
         setupAppearance()
         setupConstraints()
         
         logicController.viewDidLoad()
     }
     
-    private func setupAppearance() {
+    internal override func setupAppearance() {
+        super.setupAppearance()
         
         // image view
         imageView.contentMode = .scaleAspectFit
@@ -23,7 +22,6 @@ class FullScreenPromptViewController: PromptViewController {
         // title
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 0
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
         view.addSubview(titleLabel)
                 
         // subtitle
@@ -33,17 +31,14 @@ class FullScreenPromptViewController: PromptViewController {
         
         // accept button
         acceptButton.setTitle("accept", for: .normal)
-        acceptButton.setTitleColor(.black, for: .normal)
-        acceptButton.backgroundColor = .green
         view.addSubview(acceptButton)
         
         // dismiss button
         dismissButton.setTitle("dismiss", for: .normal)
-        dismissButton.setTitleColor(.black, for: .normal)
         view.addSubview(dismissButton)
     }
     
-    private func setupConstraints() {
+    internal override func setupConstraints() {
         
         // image view
         imageView.snp.makeConstraints { make in
@@ -67,8 +62,8 @@ class FullScreenPromptViewController: PromptViewController {
         
         // accept button
         acceptButton.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview()
-            make.height.equalTo(44)
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.height.equalTo(50)
             
             make.centerX.equalToSuperview()
             make.bottom.equalTo(dismissButton.snp.top).offset(-16)
@@ -76,8 +71,8 @@ class FullScreenPromptViewController: PromptViewController {
      
         // dismiss button
         dismissButton.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview()
-            make.height.equalTo(44)
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.height.equalTo(50)
             
             make.centerX.equalToSuperview()
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-16)

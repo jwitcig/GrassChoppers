@@ -14,7 +14,7 @@ class CardPromptViewController: PromptViewController {
         logicController.viewDidLoad()
     }
     
-    private func setupAppearance() {
+    internal override func setupAppearance() {
         view.backgroundColor = .systemBlue
         view.layer.cornerRadius = 14
         
@@ -37,7 +37,7 @@ class CardPromptViewController: PromptViewController {
         subtitleLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
     }
     
-    private func setupConstraints() {
+    internal override func setupConstraints() {
         
         // image view
         imageView.snp.makeConstraints { make in

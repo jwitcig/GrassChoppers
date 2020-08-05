@@ -21,8 +21,8 @@ class PromptDataManager: PromptDataManaging {
         // this tells the processor to move on and come back to this code later
         DispatchQueue.main.async {
             self.delegate?.didFetch(
-                title: "some title from the database",
-                subtitle: "some subtitle from the database, some subtitle from the database"
+                title: "Some Promo!",
+                subtitle: "Here is where you would put some details about the promo."
             )
             
             self.delegate?.didFetch(image: #imageLiteral(resourceName: "push-notification-placeholder"))

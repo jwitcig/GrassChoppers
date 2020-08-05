@@ -33,11 +33,13 @@ final class PromptAssembly: Assembly {
             switch displayMode {
             case .fullScreen:
                 return FullScreenPromptViewController(
-                    logicController: resolver.resolve(PromptLogicControlling.self)!
+                    logicController: resolver.resolve(PromptLogicControlling.self)!,
+                    theme: resolver.resolve(ThemeType.self)!
                 )
             case .card:
                 return CardPromptViewController(
-                    logicController: resolver.resolve(PromptLogicControlling.self)!
+                    logicController: resolver.resolve(PromptLogicControlling.self)!,
+                    theme: resolver.resolve(ThemeType.self)!
                 )
             }
         }.initCompleted { resolver, viewController in

@@ -18,11 +18,15 @@ struct LightThemeTextStyles: TextStyles {
 struct LightThemeButtonStyles: ButtonStyles {
     
     let primary: ButtonStyle
+    let secondary: ButtonStyle
+    let floating: ButtonStyle
     
     init() {
         let baseStyles = BaseButtonStyles()
         
         self.primary = baseStyles.primary
+        self.secondary = baseStyles.secondary
+        self.floating = baseStyles.floating
     }
 }
 

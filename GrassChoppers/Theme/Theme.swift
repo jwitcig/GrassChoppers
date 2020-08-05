@@ -71,6 +71,8 @@ protocol TextStyles {
 
 protocol ButtonStyles {
     var primary: ButtonStyle { get }
+    var secondary: ButtonStyle { get }
+    var floating: ButtonStyle { get }
 }
 
 struct Theme: ThemeType {
