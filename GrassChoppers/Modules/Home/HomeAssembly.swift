@@ -23,6 +23,7 @@ final class HomeAssembly: Assembly {
         container.register(HomeViewController.self) { resolver in
             return HomeViewController(
                 logicController: resolver.resolve(HomeLogicControlling.self)!,
+                analyticsTracker: AnalyticsTracker(urlSession: URLSession.shared),
                 theme: resolver.resolve(ThemeType.self)!
             )
         }.initCompleted { resolver, viewController in
