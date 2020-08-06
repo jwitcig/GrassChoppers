@@ -6,6 +6,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     private let logicController: HomeLogicControlling
+    private let analyticsTracker: AnalyticsTracking
     
     private let label: Label
     private let button: Button
@@ -14,9 +15,11 @@ class HomeViewController: UIViewController {
     
     init(
         logicController: HomeLogicControlling,
+        analyticsTracker: AnalyticsTracking,
         theme: ThemeType
     ) {
         self.logicController = logicController
+        self.analyticsTracker = analyticsTracker
         self.label = Label(textStyle: theme.textStyles.header)
         self.button = Button(style: theme.buttonStyles.secondary)
         self.theme = theme
@@ -32,6 +35,16 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+        analyticsTracker.track(event: .homeScreenViewed)
+        
+        
+        
+        
+        
         view.backgroundColor = theme.colors.backgroundColor
         
         view.addSubview(label)
