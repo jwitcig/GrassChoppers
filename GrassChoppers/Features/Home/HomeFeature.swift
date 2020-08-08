@@ -20,6 +20,11 @@ class HomeFeature: Assembly {
             routerFactory: HomeFeatureRouter.init
         ).assemble(container: container)
 
+        ProfileAssembly(
+            parentContainer: container,
+            routerFactory: ProfileRouter.init
+        ).assemble(container: container)
+        
         container.register(ThemeType.self) { _ in
             return Theme.dark
         }
