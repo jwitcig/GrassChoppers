@@ -12,7 +12,7 @@ class HomeFeatureRouter: HomeRouting {
     }
     
     func routeToNextScreen() {
-        let listViewController = resolver.resolve(ServiceHistoryFeature.self)!.createEntryViewController()
+        let listViewController = resolver.resolve(ServiceHistoryFeature.self)!.createEntryViewController(somethingFromHome: "some data from home")
         viewController?.present(listViewController, animated: true, completion: nil)
     }
 }

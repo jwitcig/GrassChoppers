@@ -12,11 +12,17 @@ protocol ServiceHistoryDataManagingDelegate {
 class ServiceHistoryDataManager: ServiceHistoryDataManaging {
     var delegate: ServiceHistoryDataManagingDelegate?
     
+    private let somethingFromHome: String
+    
+    init(somethingFromHome: String) {
+        self.somethingFromHome = somethingFromHome
+    }
+    
     func requestInitialState() {
         deliverHistory()
     }
     
     private func deliverHistory() {
-        delegate?.didFetchHistory(services: ["Jonah", "Travis", "Witcig"])
+        delegate?.didFetchHistory(services: ["Jonah", "Travis", "Witcig", somethingFromHome])
     }
 }
